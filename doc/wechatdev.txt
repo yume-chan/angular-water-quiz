@@ -1,0 +1,22 @@
+﻿1.测试平台：https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login
+2.配置URL(VERIFY_DOMAIN)，token，这个URL是微信推送消息统一URL：http://webwine.cnaidai.com/webwine/wx/index.cgi
+3.微信授权登录
+微信登录链接：
+snsapi_base:
+var url=http://webwine.cnaidai.com/webwine/login/wxLogin.html,此处的域名必须为外网可访问的第2步验证通过的域名VERIFY_DOMAIN（可用natapp做外网映射）
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx520c15f417810387&redirect_uri=encodeURIComponent(url)&type=code&scope=snsapi_base&state=123#wechat_redirect
+4.在微信回调页面wxLogin.html中获取code,通过code调接口换取openID，然后通过openID登录
+
+
+wxlogin="http://1bc55d24.ngrok.natapp.cn/webwine/login/wxLogin.html"
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx520c15f417810387&redirect_uri=http%3A%2F%2F1bc55d24.ngrok.natapp.cn%2Fwebwine%2Flogin%2FwxLogin.html&type==code&scope=snsapi_base&state=123#wechat_redirect
+
+
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxecedc5162620a913&redirect_uri=http%3A%2F%2F4dec6ef9.ngrok.natapp.cn%2Fwebwine%2Flogin%2FwxLogin.html%3FinviteUser%3D&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect
+
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxecedc5162620a913&redirect_uri=http%3A%2F%2Fwebwine.cnaidai.com%2Fwebwine%2Flogin%2FwxLogin.html%3FinviteUser%3D&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect
+
+公众号设置：
+1.开发者上传头像
+2.设置链接URL token
+3.设置接口权限-网页账号设置-安全回调页面
