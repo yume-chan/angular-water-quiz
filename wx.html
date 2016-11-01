@@ -11,6 +11,5 @@
 
     var a = document.createElement("a");
     a.href = "index.html" + getParameterByName("redirect_uri") + "?code=" + getParameterByName("code");
-    alert(a.href);
     location.href = a.href;
 </script>
