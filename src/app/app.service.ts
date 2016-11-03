@@ -75,6 +75,7 @@ export interface Content {
     linkUrl: string;
     title: string;
     imgUrl: string;
+    contentId: number;
 }
 
 export interface User {
@@ -152,8 +153,16 @@ export class AppService {
         location.href = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${this.appId}&redirect_uri=${encodeURIComponent(a.href)}&response_type=code&scope=snsapi_userinfo#wechat_redirect`;
     }
 
+    shareLog(contentId: number, type: number): void {
+        this.post('data/share-log.cgi', {
+            userId: this.user.userId,
+            contentId,
+            type
+        }, false).catch(err => { });
+    }
+
     user: User;
-    login(code: string): Promise<boolean> {
+    login(code: string, userId: number | null): Promise<boolean> {
         // this.user = {
         //     userId: 4,
         //     city: "123",
@@ -165,7 +174,8 @@ export class AppService {
         // return Promise.resolve(true);
 
         return this.post('data/login.cgi', {
-            code
+            code,
+            userId
         }).then(data => {
             if (data["code"] == 6000) {
                 alert(data["message"]);
@@ -174,6 +184,34 @@ export class AppService {
             }
 
             this.user = data.user as User;
+
+            this.getWxSignature()
+                .then(config => {
+                    // config.debug = true;
+                    config.jsApiList = ["onMenuShareTimeline", "onMenuShareAppMessage"];
+                    wx.config(config);
+                    wx.ready(() => {
+                        this.getContent(1)
+                            .then(data => {
+                                wx.onMenuShareTimeline({
+                                    title: data.title,
+                                    imgUrl: data.imgUrl,
+                                    link: data.linkUrl,
+                                    complete: p => this.shareLog(data.contentId, 1)
+                                });
+                                wx.onMenuShareAppMessage({
+                                    title: data.title,
+                                    imgUrl: data.imgUrl,
+                                    link: data.linkUrl,
+                                    desc: data.content,
+                                    complete: p => this.shareLog(data.contentId, 1)
+                                });
+                            })
+                            .catch(err => { });
+                    });
+                })
+                .catch(err => { });
+
             return true;
         }).catch(err => {
             this.goToLogin();
@@ -286,7 +324,7 @@ export class AppService {
     }
 
     getContent(type: number): Promise<Content> {
-        return this.post('data/get-content.cgi', { type }, false);
+        return this.post('data/get-content.cgi', { type, userId: this.user.userId }, false);
     }
 
     getWxSignature(): Promise<wx.WxConfig> {

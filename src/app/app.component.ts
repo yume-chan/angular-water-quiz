@@ -1,5 +1,3 @@
-/// <reference path="../jweixin.d.ts" />
-
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -16,44 +14,9 @@ export class AppComponent implements OnInit {
         private route: ActivatedRoute,
         public appService: AppService) { }
 
-    loading: boolean;
+    loading: number = 0;
 
     ngOnInit() {
-        this.appService.onLoading.subscribe(v => this.loading = v);
-
-        this.appService
-            .getWxSignature()
-            .then(config => {
-                // config.debug = true;
-                config.jsApiList = ["onMenuShareTimeline", "onMenuShareAppMessage"];
-                wx.config(config);
-                wx.ready(() => {
-                    this.appService
-                        .getContent(1)
-                        .then(data => {
-                            wx.onMenuShareTimeline({
-                                title: data.title,
-                                imgUrl: data.imgUrl,
-                                link: data.linkUrl,
-                                complete: p => {
-                                },
-                                trigger: p => {
-                                }
-                            });
-                            wx.onMenuShareAppMessage({
-                                title: data.title,
-                                imgUrl: data.imgUrl,
-                                link: data.linkUrl,
-                                desc: data.content,
-                                complete: p => {
-                                },
-                                trigger: p => {
-                                }
-                            });
-                        })
-                        .catch(err => { });
-                });
-            })
-            .catch(err => { });
+        this.appService.onLoading.subscribe(v => this.loading += v ? 1 : -1);
     }
 }

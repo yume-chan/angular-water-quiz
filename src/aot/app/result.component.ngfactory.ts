@@ -121,48 +121,45 @@ class _View_ResultComponent0 extends import3.AppView<import0.ResultComponent> {
   _el_20:any;
   _text_21:any;
   _text_22:any;
-  _el_23:any;
+  _anchor_23:any;
+  /*private*/ _appEl_23:import5.AppElement;
+  _TemplateRef_23_5:any;
+  _NgIf_23_6:import14.Wrapper_NgIf;
   _text_24:any;
-  _text_25:any;
-  _anchor_26:any;
-  /*private*/ _appEl_26:import5.AppElement;
-  _TemplateRef_26_5:any;
-  _NgIf_26_6:import14.Wrapper_NgIf;
+  _el_25:any;
+  _text_26:any;
   _text_27:any;
-  _el_28:any;
+  _anchor_28:any;
+  /*private*/ _appEl_28:import5.AppElement;
+  _TemplateRef_28_5:any;
+  _NgIf_28_6:import14.Wrapper_NgIf;
   _text_29:any;
-  _text_30:any;
-  _anchor_31:any;
-  /*private*/ _appEl_31:import5.AppElement;
-  _TemplateRef_31_5:any;
-  _NgIf_31_6:import14.Wrapper_NgIf;
+  _el_30:any;
+  _text_31:any;
   _text_32:any;
   _el_33:any;
+  _RouterLinkWithHref_33_3:import15.Wrapper_RouterLinkWithHref;
   _text_34:any;
   _text_35:any;
-  _el_36:any;
-  _RouterLinkWithHref_36_3:import15.Wrapper_RouterLinkWithHref;
-  _text_37:any;
+  _text_36:any;
+  _anchor_37:any;
+  /*private*/ _appEl_37:import5.AppElement;
+  _TemplateRef_37_5:any;
+  _NgIf_37_6:import14.Wrapper_NgIf;
   _text_38:any;
-  _text_39:any;
-  _anchor_40:any;
-  /*private*/ _appEl_40:import5.AppElement;
-  _TemplateRef_40_5:any;
-  _NgIf_40_6:import14.Wrapper_NgIf;
-  _text_41:any;
-  _anchor_42:any;
-  /*private*/ _appEl_42:import5.AppElement;
-  _TemplateRef_42_5:any;
-  _NgIf_42_6:import14.Wrapper_NgIf;
-  _text_43:any;
-  /*private*/ _expr_63:any;
-  /*private*/ _expr_64:any;
-  /*private*/ _expr_65:any;
+  _anchor_39:any;
+  /*private*/ _appEl_39:import5.AppElement;
+  _TemplateRef_39_5:any;
+  _NgIf_39_6:import14.Wrapper_NgIf;
+  _text_40:any;
+  /*private*/ _expr_60:any;
+  /*private*/ _expr_61:any;
+  /*private*/ _expr_62:any;
   constructor(viewUtils:import2.ViewUtils,parentInjector:import6.Injector,declarationEl:import5.AppElement) {
     super(_View_ResultComponent0,renderType_ResultComponent,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import1.ChangeDetectorStatus.CheckAlways);
-    this._expr_63 = import1.UNINITIALIZED;
-    this._expr_64 = import1.UNINITIALIZED;
-    this._expr_65 = import1.UNINITIALIZED;
+    this._expr_60 = import1.UNINITIALIZED;
+    this._expr_61 = import1.UNINITIALIZED;
+    this._expr_62 = import1.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import5.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
@@ -195,42 +192,39 @@ class _View_ResultComponent0 extends import3.AppView<import0.ResultComponent> {
     this._el_20 = import2.createRenderElement(this.renderer,this._el_14,'div',import2.EMPTY_INLINE_ARRAY,(null as any));
     this._text_21 = this.renderer.createText(this._el_20,'',(null as any));
     this._text_22 = this.renderer.createText(this._el_14,'\n		',(null as any));
-    this._el_23 = import2.createRenderElement(this.renderer,this._el_14,'div',import2.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_24 = this.renderer.createText(this._el_23,'赶紧提交结果，获得矿泉水认知勋章，并分享到朋友圈，去辣一辣小伙伴们的眼睛吧。',(null as any));
-    this._text_25 = this.renderer.createText(this._el_14,'\n		',(null as any));
-    this._anchor_26 = this.renderer.createTemplateAnchor(this._el_14,(null as any));
-    this._appEl_26 = new import5.AppElement(26,14,this,this._anchor_26);
-    this._TemplateRef_26_5 = new import16.TemplateRef_(this._appEl_26,viewFactory_ResultComponent3);
-    this._NgIf_26_6 = new import14.Wrapper_NgIf(this._appEl_26.vcRef,this._TemplateRef_26_5);
+    this._anchor_23 = this.renderer.createTemplateAnchor(this._el_14,(null as any));
+    this._appEl_23 = new import5.AppElement(23,14,this,this._anchor_23);
+    this._TemplateRef_23_5 = new import16.TemplateRef_(this._appEl_23,viewFactory_ResultComponent3);
+    this._NgIf_23_6 = new import14.Wrapper_NgIf(this._appEl_23.vcRef,this._TemplateRef_23_5);
+    this._text_24 = this.renderer.createText(this._el_14,'\n		',(null as any));
+    this._el_25 = import2.createRenderElement(this.renderer,this._el_14,'div',new import2.InlineArray2(2,'class','font-small text-center'),(null as any));
+    this._text_26 = this.renderer.createText(this._el_25,'提交结果后，会保存并显示在浙江省矿联官网上',(null as any));
     this._text_27 = this.renderer.createText(this._el_14,'\n		',(null as any));
-    this._el_28 = import2.createRenderElement(this.renderer,this._el_14,'div',new import2.InlineArray2(2,'class','font-small text-center'),(null as any));
-    this._text_29 = this.renderer.createText(this._el_28,'提交结果后，会保存并显示在浙江省矿联官网上',(null as any));
-    this._text_30 = this.renderer.createText(this._el_14,'\n		',(null as any));
-    this._anchor_31 = this.renderer.createTemplateAnchor(this._el_14,(null as any));
-    this._appEl_31 = new import5.AppElement(31,14,this,this._anchor_31);
-    this._TemplateRef_31_5 = new import16.TemplateRef_(this._appEl_31,viewFactory_ResultComponent6);
-    this._NgIf_31_6 = new import14.Wrapper_NgIf(this._appEl_31.vcRef,this._TemplateRef_31_5);
+    this._anchor_28 = this.renderer.createTemplateAnchor(this._el_14,(null as any));
+    this._appEl_28 = new import5.AppElement(28,14,this,this._anchor_28);
+    this._TemplateRef_28_5 = new import16.TemplateRef_(this._appEl_28,viewFactory_ResultComponent6);
+    this._NgIf_28_6 = new import14.Wrapper_NgIf(this._appEl_28.vcRef,this._TemplateRef_28_5);
+    this._text_29 = this.renderer.createText(this._el_14,'\n		',(null as any));
+    this._el_30 = import2.createRenderElement(this.renderer,this._el_14,'a',new import2.InlineArray2(2,'class','button big blue center'),(null as any));
+    this._text_31 = this.renderer.createText(this._el_30,'分享朋友圈 辣一辣小伙伴们',(null as any));
     this._text_32 = this.renderer.createText(this._el_14,'\n		',(null as any));
-    this._el_33 = import2.createRenderElement(this.renderer,this._el_14,'a',new import2.InlineArray2(2,'class','button big blue center'),(null as any));
-    this._text_34 = this.renderer.createText(this._el_33,'分享朋友圈 辣一辣小伙伴们',(null as any));
-    this._text_35 = this.renderer.createText(this._el_14,'\n		',(null as any));
-    this._el_36 = import2.createRenderElement(this.renderer,this._el_14,'a',new import2.InlineArray4(4,'class','button big blue center','routerLink',''),(null as any));
-    this._RouterLinkWithHref_36_3 = new import15.Wrapper_RouterLinkWithHref(this.parentInjector.get(import8.Router),this.parentInjector.get(import17.ActivatedRoute),this.parentInjector.get(import18.LocationStrategy));
-    this._text_37 = this.renderer.createText(this._el_36,'分数不够 重新挑战',(null as any));
-    this._text_38 = this.renderer.createText(this._el_14,'\n	',(null as any));
-    this._text_39 = this.renderer.createText(this._el_2,'\n\n	',(null as any));
-    this._anchor_40 = this.renderer.createTemplateAnchor(this._el_2,(null as any));
-    this._appEl_40 = new import5.AppElement(40,2,this,this._anchor_40);
-    this._TemplateRef_40_5 = new import16.TemplateRef_(this._appEl_40,viewFactory_ResultComponent7);
-    this._NgIf_40_6 = new import14.Wrapper_NgIf(this._appEl_40.vcRef,this._TemplateRef_40_5);
-    this._text_41 = this.renderer.createText(this._el_2,'\n\n	',(null as any));
-    this._anchor_42 = this.renderer.createTemplateAnchor(this._el_2,(null as any));
-    this._appEl_42 = new import5.AppElement(42,2,this,this._anchor_42);
-    this._TemplateRef_42_5 = new import16.TemplateRef_(this._appEl_42,viewFactory_ResultComponent8);
-    this._NgIf_42_6 = new import14.Wrapper_NgIf(this._appEl_42.vcRef,this._TemplateRef_42_5);
-    this._text_43 = this.renderer.createText(this._el_2,'\n',(null as any));
-    var disposable_0:Function = this.renderer.listen(this._el_33,'click',this.eventHandler(this._handle_click_33_0.bind(this)));
-    var disposable_1:Function = this.renderer.listen(this._el_36,'click',this.eventHandler(this._handle_click_36_0.bind(this)));
+    this._el_33 = import2.createRenderElement(this.renderer,this._el_14,'a',new import2.InlineArray4(4,'class','button big blue center','routerLink',''),(null as any));
+    this._RouterLinkWithHref_33_3 = new import15.Wrapper_RouterLinkWithHref(this.parentInjector.get(import8.Router),this.parentInjector.get(import17.ActivatedRoute),this.parentInjector.get(import18.LocationStrategy));
+    this._text_34 = this.renderer.createText(this._el_33,'分数不够 重新挑战',(null as any));
+    this._text_35 = this.renderer.createText(this._el_14,'\n	',(null as any));
+    this._text_36 = this.renderer.createText(this._el_2,'\n\n	',(null as any));
+    this._anchor_37 = this.renderer.createTemplateAnchor(this._el_2,(null as any));
+    this._appEl_37 = new import5.AppElement(37,2,this,this._anchor_37);
+    this._TemplateRef_37_5 = new import16.TemplateRef_(this._appEl_37,viewFactory_ResultComponent7);
+    this._NgIf_37_6 = new import14.Wrapper_NgIf(this._appEl_37.vcRef,this._TemplateRef_37_5);
+    this._text_38 = this.renderer.createText(this._el_2,'\n\n	',(null as any));
+    this._anchor_39 = this.renderer.createTemplateAnchor(this._el_2,(null as any));
+    this._appEl_39 = new import5.AppElement(39,2,this,this._anchor_39);
+    this._TemplateRef_39_5 = new import16.TemplateRef_(this._appEl_39,viewFactory_ResultComponent8);
+    this._NgIf_39_6 = new import14.Wrapper_NgIf(this._appEl_39.vcRef,this._TemplateRef_39_5);
+    this._text_40 = this.renderer.createText(this._el_2,'\n',(null as any));
+    var disposable_0:Function = this.renderer.listen(this._el_30,'click',this.eventHandler(this._handle_click_30_0.bind(this)));
+    var disposable_1:Function = this.renderer.listen(this._el_33,'click',this.eventHandler(this._handle_click_33_0.bind(this)));
     this.init(([] as any[]),[
       this._text_0,
       this._text_1,
@@ -255,27 +249,24 @@ class _View_ResultComponent0 extends import3.AppView<import0.ResultComponent> {
       this._el_20,
       this._text_21,
       this._text_22,
-      this._el_23,
+      this._anchor_23,
       this._text_24,
-      this._text_25,
-      this._anchor_26,
+      this._el_25,
+      this._text_26,
       this._text_27,
-      this._el_28,
+      this._anchor_28,
       this._text_29,
-      this._text_30,
-      this._anchor_31,
+      this._el_30,
+      this._text_31,
       this._text_32,
       this._el_33,
       this._text_34,
       this._text_35,
-      this._el_36,
-      this._text_37,
+      this._text_36,
+      this._anchor_37,
       this._text_38,
-      this._text_39,
-      this._anchor_40,
-      this._text_41,
-      this._anchor_42,
-      this._text_43
+      this._anchor_39,
+      this._text_40
     ]
     ,[
       disposable_0,
@@ -289,15 +280,15 @@ class _View_ResultComponent0 extends import3.AppView<import0.ResultComponent> {
     if (((token === import19.NgIf) && (16 === requestNodeIndex))) { return this._NgIf_16_6.context; }
     if (((token === import16.TemplateRef) && (18 === requestNodeIndex))) { return this._TemplateRef_18_5; }
     if (((token === import19.NgIf) && (18 === requestNodeIndex))) { return this._NgIf_18_6.context; }
-    if (((token === import16.TemplateRef) && (26 === requestNodeIndex))) { return this._TemplateRef_26_5; }
-    if (((token === import19.NgIf) && (26 === requestNodeIndex))) { return this._NgIf_26_6.context; }
-    if (((token === import16.TemplateRef) && (31 === requestNodeIndex))) { return this._TemplateRef_31_5; }
-    if (((token === import19.NgIf) && (31 === requestNodeIndex))) { return this._NgIf_31_6.context; }
-    if (((token === import20.RouterLinkWithHref) && ((36 <= requestNodeIndex) && (requestNodeIndex <= 37)))) { return this._RouterLinkWithHref_36_3.context; }
-    if (((token === import16.TemplateRef) && (40 === requestNodeIndex))) { return this._TemplateRef_40_5; }
-    if (((token === import19.NgIf) && (40 === requestNodeIndex))) { return this._NgIf_40_6.context; }
-    if (((token === import16.TemplateRef) && (42 === requestNodeIndex))) { return this._TemplateRef_42_5; }
-    if (((token === import19.NgIf) && (42 === requestNodeIndex))) { return this._NgIf_42_6.context; }
+    if (((token === import16.TemplateRef) && (23 === requestNodeIndex))) { return this._TemplateRef_23_5; }
+    if (((token === import19.NgIf) && (23 === requestNodeIndex))) { return this._NgIf_23_6.context; }
+    if (((token === import16.TemplateRef) && (28 === requestNodeIndex))) { return this._TemplateRef_28_5; }
+    if (((token === import19.NgIf) && (28 === requestNodeIndex))) { return this._NgIf_28_6.context; }
+    if (((token === import20.RouterLinkWithHref) && ((33 <= requestNodeIndex) && (requestNodeIndex <= 34)))) { return this._RouterLinkWithHref_33_3.context; }
+    if (((token === import16.TemplateRef) && (37 === requestNodeIndex))) { return this._TemplateRef_37_5; }
+    if (((token === import19.NgIf) && (37 === requestNodeIndex))) { return this._NgIf_37_6.context; }
+    if (((token === import16.TemplateRef) && (39 === requestNodeIndex))) { return this._TemplateRef_39_5; }
+    if (((token === import19.NgIf) && (39 === requestNodeIndex))) { return this._NgIf_39_6.context; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -307,52 +298,52 @@ class _View_ResultComponent0 extends import3.AppView<import0.ResultComponent> {
     const currVal_18_0_0:any = (this.context.advanceMode && (this.context.submitCount > 3));
     this._NgIf_18_6.check_ngIf(currVal_18_0_0,throwOnChange,false);
     this._NgIf_18_6.detectChangesInInputProps(this,this._anchor_18,throwOnChange);
-    const currVal_26_0_0:boolean = (!this.context.advanceMode || (this.context.submitCount <= 3));
-    this._NgIf_26_6.check_ngIf(currVal_26_0_0,throwOnChange,false);
-    this._NgIf_26_6.detectChangesInInputProps(this,this._anchor_26,throwOnChange);
-    const currVal_31_0_0:any = (this.context.advanceMode && (this.context.submitCount > 3));
-    this._NgIf_31_6.check_ngIf(currVal_31_0_0,throwOnChange,false);
-    this._NgIf_31_6.detectChangesInInputProps(this,this._anchor_31,throwOnChange);
-    const currVal_36_0_0:any = '';
-    this._RouterLinkWithHref_36_3.check_routerLink(currVal_36_0_0,throwOnChange,false);
-    this._RouterLinkWithHref_36_3.detectChangesInInputProps(this,this._el_36,throwOnChange);
-    const currVal_40_0_0:any = this.context.showForm;
-    this._NgIf_40_6.check_ngIf(currVal_40_0_0,throwOnChange,false);
-    this._NgIf_40_6.detectChangesInInputProps(this,this._anchor_40,throwOnChange);
-    const currVal_42_0_0:any = this.context.share;
-    this._NgIf_42_6.check_ngIf(currVal_42_0_0,throwOnChange,false);
-    this._NgIf_42_6.detectChangesInInputProps(this,this._anchor_42,throwOnChange);
+    const currVal_23_0_0:boolean = (!this.context.advanceMode || (this.context.submitCount <= 3));
+    this._NgIf_23_6.check_ngIf(currVal_23_0_0,throwOnChange,false);
+    this._NgIf_23_6.detectChangesInInputProps(this,this._anchor_23,throwOnChange);
+    const currVal_28_0_0:any = (this.context.advanceMode && (this.context.submitCount > 3));
+    this._NgIf_28_6.check_ngIf(currVal_28_0_0,throwOnChange,false);
+    this._NgIf_28_6.detectChangesInInputProps(this,this._anchor_28,throwOnChange);
+    const currVal_33_0_0:any = '';
+    this._RouterLinkWithHref_33_3.check_routerLink(currVal_33_0_0,throwOnChange,false);
+    this._RouterLinkWithHref_33_3.detectChangesInInputProps(this,this._el_33,throwOnChange);
+    const currVal_37_0_0:any = this.context.showForm;
+    this._NgIf_37_6.check_ngIf(currVal_37_0_0,throwOnChange,false);
+    this._NgIf_37_6.detectChangesInInputProps(this,this._anchor_37,throwOnChange);
+    const currVal_39_0_0:any = this.context.share;
+    this._NgIf_39_6.check_ngIf(currVal_39_0_0,throwOnChange,false);
+    this._NgIf_39_6.detectChangesInInputProps(this,this._anchor_39,throwOnChange);
     this.detectContentChildrenChanges(throwOnChange);
-    const currVal_63:any = import2.interpolate(1,'',this.context.result.allScore,'分');
-    if (import2.checkBinding(throwOnChange,this._expr_63,currVal_63)) {
-      this.renderer.setText(this._text_9,currVal_63);
-      this._expr_63 = currVal_63;
+    const currVal_60:any = import2.interpolate(1,'',this.context.result.allScore,'分');
+    if (import2.checkBinding(throwOnChange,this._expr_60,currVal_60)) {
+      this.renderer.setText(this._text_9,currVal_60);
+      this._expr_60 = currVal_60;
     }
-    const currVal_64:any = (('url(' + this.context.result.imgUrl) + ')');
-    if (import2.checkBinding(throwOnChange,this._expr_64,currVal_64)) {
-      this.renderer.setElementStyle(this._el_11,'backgroundImage',((this.viewUtils.sanitizer.sanitize(import21.SecurityContext.STYLE,currVal_64) == (null as any))? (null as any): this.viewUtils.sanitizer.sanitize(import21.SecurityContext.STYLE,currVal_64).toString()));
-      this._expr_64 = currVal_64;
+    const currVal_61:any = (('url(' + this.context.result.imgUrl) + ')');
+    if (import2.checkBinding(throwOnChange,this._expr_61,currVal_61)) {
+      this.renderer.setElementStyle(this._el_11,'backgroundImage',((this.viewUtils.sanitizer.sanitize(import21.SecurityContext.STYLE,currVal_61) == (null as any))? (null as any): this.viewUtils.sanitizer.sanitize(import21.SecurityContext.STYLE,currVal_61).toString()));
+      this._expr_61 = currVal_61;
     }
-    const currVal_65:any = import2.interpolate(1,'',this.context.result.comment,'');
-    if (import2.checkBinding(throwOnChange,this._expr_65,currVal_65)) {
-      this.renderer.setText(this._text_21,currVal_65);
-      this._expr_65 = currVal_65;
+    const currVal_62:any = import2.interpolate(1,'',this.context.result.comment,'');
+    if (import2.checkBinding(throwOnChange,this._expr_62,currVal_62)) {
+      this.renderer.setText(this._text_21,currVal_62);
+      this._expr_62 = currVal_62;
     }
-    this._RouterLinkWithHref_36_3.detectChangesInHostProps(this,this._el_36,throwOnChange);
+    this._RouterLinkWithHref_33_3.detectChangesInHostProps(this,this._el_33,throwOnChange);
     this.detectViewChildrenChanges(throwOnChange);
   }
   destroyInternal():void {
-    this._RouterLinkWithHref_36_3.context.ngOnDestroy();
+    this._RouterLinkWithHref_33_3.context.ngOnDestroy();
+  }
+  private _handle_click_30_0($event:any):boolean {
+    this.markPathToRootAsCheckOnce();
+    const pd_30_0:any = ((<any>(this.context.share = true)) !== false);
+    return (true && pd_30_0);
   }
   private _handle_click_33_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_33_0:any = ((<any>(this.context.share = true)) !== false);
+    const pd_33_0:any = ((<any>this._RouterLinkWithHref_33_3.context.onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
     return (true && pd_33_0);
-  }
-  private _handle_click_36_0($event:any):boolean {
-    this.markPathToRootAsCheckOnce();
-    const pd_36_0:any = ((<any>this._RouterLinkWithHref_36_3.context.onClick($event.button,$event.ctrlKey,$event.metaKey)) !== false);
-    return (true && pd_36_0);
   }
 }
 export function viewFactory_ResultComponent0(viewUtils:import2.ViewUtils,parentInjector:import6.Injector,declarationEl:import5.AppElement):import3.AppView<import0.ResultComponent> {

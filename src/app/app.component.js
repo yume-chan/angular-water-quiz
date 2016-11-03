@@ -6,43 +6,11 @@ export var AppComponent = (function () {
         this.router = router;
         this.route = route;
         this.appService = appService;
+        this.loading = 0;
     }
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.appService.onLoading.subscribe(function (v) { return _this.loading = v; });
-        this.appService
-            .getWxSignature()
-            .then(function (config) {
-            config.jsApiList = ["onMenuShareTimeline", "onMenuShareAppMessage"];
-            wx.config(config);
-            wx.ready(function () {
-                _this.appService
-                    .getContent(1)
-                    .then(function (data) {
-                    wx.onMenuShareTimeline({
-                        title: data.title,
-                        imgUrl: data.imgUrl,
-                        link: data.linkUrl,
-                        complete: function (p) {
-                        },
-                        trigger: function (p) {
-                        }
-                    });
-                    wx.onMenuShareAppMessage({
-                        title: data.title,
-                        imgUrl: data.imgUrl,
-                        link: data.linkUrl,
-                        desc: data.content,
-                        complete: function (p) {
-                        },
-                        trigger: function (p) {
-                        }
-                    });
-                })
-                    .catch(function (err) { });
-            });
-        })
-            .catch(function (err) { });
+        this.appService.onLoading.subscribe(function (v) { return _this.loading += v ? 1 : -1; });
     };
     AppComponent.decorators = [
         { type: Component, args: [{

@@ -82,10 +82,18 @@ export var AppService = (function () {
         a.href = "wx.html?redirect_uri=" + encodeURIComponent(location.hash.split("?")[0]);
         location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + this.appId + "&redirect_uri=" + encodeURIComponent(a.href) + "&response_type=code&scope=snsapi_userinfo#wechat_redirect";
     };
-    AppService.prototype.login = function (code) {
+    AppService.prototype.shareLog = function (contentId, type) {
+        this.post('data/share-log.cgi', {
+            userId: this.user.userId,
+            contentId: contentId,
+            type: type
+        }, false).catch(function (err) { });
+    };
+    AppService.prototype.login = function (code, userId) {
         var _this = this;
         return this.post('data/login.cgi', {
-            code: code
+            code: code,
+            userId: userId
         }).then(function (data) {
             if (data["code"] == 6000) {
                 alert(data["message"]);
@@ -93,6 +101,31 @@ export var AppService = (function () {
                 return false;
             }
             _this.user = data.user;
+            _this.getWxSignature()
+                .then(function (config) {
+                config.jsApiList = ["onMenuShareTimeline", "onMenuShareAppMessage"];
+                wx.config(config);
+                wx.ready(function () {
+                    _this.getContent(1)
+                        .then(function (data) {
+                        wx.onMenuShareTimeline({
+                            title: data.title,
+                            imgUrl: data.imgUrl,
+                            link: data.linkUrl,
+                            complete: function (p) { return _this.shareLog(data.contentId, 1); }
+                        });
+                        wx.onMenuShareAppMessage({
+                            title: data.title,
+                            imgUrl: data.imgUrl,
+                            link: data.linkUrl,
+                            desc: data.content,
+                            complete: function (p) { return _this.shareLog(data.contentId, 1); }
+                        });
+                    })
+                        .catch(function (err) { });
+                });
+            })
+                .catch(function (err) { });
             return true;
         }).catch(function (err) {
             _this.goToLogin();
@@ -184,7 +217,7 @@ export var AppService = (function () {
             });
     };
     AppService.prototype.getContent = function (type) {
-        return this.post('data/get-content.cgi', { type: type }, false);
+        return this.post('data/get-content.cgi', { type: type, userId: this.user.userId }, false);
     };
     AppService.prototype.getWxSignature = function () {
         return this.post('data/get-wx-signature.cgi', { url: location.href }, false);
