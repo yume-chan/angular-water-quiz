@@ -1,0 +1,88 @@
+.animation-name(@arguments) {
+    -webkit-animation-name: @arguments;
+    animation-name: @arguments;
+}
+
+.animation-delay(@arguments) {
+    -webkit-animation-delay: @arguments;
+    animation-delay: @arguments;
+}
+
+.animation-duration(@arguments) {
+    -webkit-animation-duration: @arguments;
+    animation-duration: @arguments;
+}
+
+.animation-iteration-count(@arguments) {
+    -webkit-animation-iteration-count: @arguments;
+    animation-iteration-count: @arguments;
+}
+
+.animation-timing-function(@arguments) {
+    -webkit-animation-timing-function: @arguments;
+    animation-timing-function: @arguments;
+}
+
+.selections {
+    font-size: 0;
+}
+
+.radio {
+    display: inline-block !important;
+    font-size: 20px;
+    margin: 10px 5%;
+    width: 40% !important;
+}
+
+.checkbox {
+    display: inline-block !important;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px 0 10px 10%;
+    padding-left: 40px;
+    width: 40% !important;
+
+    &.wide {
+        margin: 10px 0 10px 10%;
+        width: 80% !important;
+    }
+}
+
+.flex-column {
+    padding: 30px 20px;
+}
+
+.result {
+    .animation-duration(.5s);
+    .animation-name(fly-in);
+    .animation-timing-function(ease-in-out);
+    background-color: white;
+    bottom: 0;
+    color: #1688cb;
+    display: block;
+    left: 0;
+    max-width: 375px;
+    padding: 15px 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @media(min-width:375px) {
+        padding: 15px 30px;
+    }
+
+    .button.blue {
+        margin-top: 5px;
+    }
+
+    .text {
+        margin-left: 70px;
+    }
+
+    .left {
+        background-position: center center;
+        float: left;
+        height: 90px;
+        width: 50px;
+    }
+}

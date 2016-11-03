@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="result.component.css">
+
+<style>
+	.scroller {
+		height: calc(100% - 365px);
+		overflow-y: auto;
+	}
+	
+	@media(max-height: 500px) {
+		.scroller {
+			height: calc(100% - 320px);
+			overflow-y: auto;
+		}
+	}
+	
+	.row {
+		font-size: 16px;
+		line-height: 25px;
+	}
+	
+	.row div {
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.column-1 {
+		width: 50px;
+	}
+	
+	.column-2 {
+		width: calc((100% - 100px) / 5 * 2);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	.column-3 {
+		width: calc((100% - 100px) / 5 * 3);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	.column-4 {
+		width: 50px;
+		text-align: end;
+	}
+</style>
+<div class="content flex-column" [ngSwitch]="rank">
+	<div class="rotate center">
+		<i class="i-wheel"></i>
+		<div class="circle" [style.backgroundImage]="'url(' + appService.user.headImgUrl + ')'"></div>
+	</div>
+	<div #scroller class="scroller box" (scroll)="scroll($event)">
+		<template ngFor let-item [ngForOf]="list" let-i="index">
+			<div class="row">
+				<div class="column-1">{{i + 1}}</div>
+				<div class="column-2">{{item.realName}}</div>
+				<div class="column-3">{{item.province}}{{item.city}}</div>
+				<div class="column-4">{{item.score}}分</div>
+			</div>
+		</template>
+	</div>
+	<template [ngSwitchCase]="null">
+		<div class="box">
+			<span>我的成绩：还没有测试过</span>
+		</div>
+		<a class="button big center" routerLink="">立即测试</a>
+	</template>
+	<template ngSwitchDefault>
+		<div class="box">
+			<span>我的成绩：{{rank.score}} 分，第 {{rank.rank}} 名</span>
+		</div>
+		<a class="button big center" routerLink="">再测一次</a>
+	</template>
+	<a class="button big center" (click)="appService.goExternal()">了解一下 上善若水计划</a>
+</div>

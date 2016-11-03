@@ -1,0 +1,18 @@
+<script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    var a = document.createElement("a");
+    var url = getParameterByName("redirect_uri");
+    if (url.indexOf("#") != 0)
+        url = "#/" + url;
+    a.href = "index.html" + url + "?code=" + getParameterByName("code");
+    location.href = a.href;
+</script>

@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="question.component.css">
+
+<div class="content flex-column">
+	<i class="i-drop small center"></i>
+	<h2>问题{{question.order}} ({{question.type == 1 ? "选择题" : "判断题"}})</h2>
+	<h3 class="text-center">{{question.content}}</h3>
+	<div class="selections" [ngSwitch]="question.subjectOptionList.length">
+		<template [ngSwitchCase]="2">
+			<template ngFor let-item [ngForOf]="question.subjectOptionList" let-i="index">
+				<a class="button radio" [class.solid]="item.checked" (click)="change(item)">{{item.optionDetail}}</a>
+			</template>
+		</template>
+		<template [ngSwitchCase]="3">
+			<template ngFor let-item [ngForOf]="question.subjectOptionList" let-i="index">
+				<a class="{{'checkbox wide i-s' + i}}" [class.solid]="item.checked" (click)="change(item)">{{item.optionDetail}}</a>
+			</template>
+		</template>
+		<template [ngSwitchCase]="4">
+			<template ngFor let-item [ngForOf]="question.subjectOptionList" let-i="index">
+				<a class="{{'checkbox wide i-s' + i}}" [class.solid]="item.checked" (click)="change(item)">{{item.optionDetail}}</a>
+			</template>
+		</template>
+		<template ngSwitchDefault>
+			<template ngFor let-item [ngForOf]="question.subjectOptionList" let-i="index">
+				<a class="{{'checkbox i-s' + i}}" [class.solid]="item.checked" (click)="change(item)">{{item.optionDetail}}</a>
+			</template>
+		</template>
+	</div>
+	<div style="height: 30px">
+		<a *ngIf="canNext" class="button center" (click)="submit()">OK</a>
+	</div>
+</div>
+<div *ngIf="result" class="mask" (click)="next()">
+	<div class="result center" [ngSwitch]="result.flag">
+		<div *ngSwitchCase="true">
+			<i class="left i-good"></i>
+			<div class="text">
+				<i class="i-t-good"></i>
+				<div>此道题您答对啦~~~</div>
+				<div>本题得分 {{result.score}} 分，目前总分 {{result.allScore}} 分</div>
+			</div>
+		</div>
+		<div *ngSwitchDefault>
+			<i class="left i-bad"></i>
+			<div class="text">
+				<i class="i-t-bad"></i>
+				<div>此道题您答错了~~~</div>
+				<div>本题得分 {{result.score}} 分，目前总分 {{result.allScore}} 分</div>
+			</div>
+		</div>
+		<!--<a class="button blue middle center" (click)="next()">下一题 ({{count}}s)</a>-->
+	</div>
+</div>

@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="result.component.css">
+
+<style>
+	img {
+		width: 96px;
+		height: 96px;
+		border-radius: 96px;
+	}
+</style>
+<div class="content">
+	<div class="rotate center">
+		<i class="i-wheel"></i>
+		<div class="circle" [style.backgroundImage]="'url(' + appService.user.headImgUrl + ')'"></div>
+	</div>
+	<div class="white">
+		<i class="i-success center"></i>
+		<div>{{appService.user.realName || appService.user.nickName}}</div>
+		<div>
+			感谢参与，您的结果已经保存至浙江省矿业联合会官网中的上善若水计划板块中，您可以点击以下按钮链接进入矿联官网上善若水板块，进行查看您的成绩；<br> 水是生命质量好坏的最基础的营养元素，好水“铸造”好体质，好的体内水环境有助与其他营养素的吸收、利用的效率，保持人体健康动态平衡。
+			<br> 可能以自来水和净水器为主的这类解决您安全饮用的日常生活饮用水，已经不能满足拥有您这样健康饮水认知的人士群体，上善若水计划或许正好能满足您这样的健康饮水需求，为您提供亲民实惠的价格以及协助您养成科学健康的饮水习惯的互联网管家式服务；
+			<br> 有兴趣不妨点击“了解一下 上善若水计划”。<br>
+		</div>
+		<a class="button big blue center" routerLink="/rank">进入官网 查看排名</a>
+		<a class="button big blue center" (click)="appService.goExternal()">了解一下 上善若水计划</a>
+	</div>
+</div>

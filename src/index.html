@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>矿泉水科学认知测验</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+	<app>
+		<div class="loading">加载中...</div>
+	</app>
+
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+	<script src="node_modules/core-js/client/shim.min.js"></script>
+	<script src="node_modules/zone.js/dist/zone.min.js"></script>
+	<!--<script src="web-animations.min.js"></script>-->
+
+	<script src="node_modules/reflect-metadata/Reflect.js"></script>
+	<script src="node_modules/systemjs/dist/system.src.js"></script>
+	<script src="systemjs.config.js"></script>
+	<script>
+        System.import('app').catch(function(err){ console.error(err); });
+    </script>
+</body>
+
+</html>

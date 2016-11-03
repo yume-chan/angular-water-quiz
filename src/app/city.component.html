@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="common.css">
+
+<style>
+	.content {
+		padding: 0;
+		max-width: unset !important;
+	}
+	
+	.item {
+		height: 50px;
+		line-height: 45px;
+		border-top: 1px solid #CCC;
+		margin-top: -1px;
+	}
+	
+	.inner {
+		max-width: 375px;
+		padding: 0 20px;
+	}
+</style>
+<div class="content">
+	<div class="item text-center">请选择</div>
+	<div class="item" *ngFor="let item of list" (click)="next(item.id, item.name)">
+		<div class="inner">{{item.name}}</div>
+	</div>
+</div>

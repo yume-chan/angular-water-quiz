@@ -1,0 +1,191 @@
+.animation-name(@arguments) {
+    -webkit-animation-name: @arguments;
+    animation-name: @arguments;
+}
+
+.animation-delay(@arguments) {
+    -webkit-animation-delay: @arguments;
+    animation-delay: @arguments;
+}
+
+.animation-duration(@arguments) {
+    -webkit-animation-duration: @arguments;
+    animation-duration: @arguments;
+}
+
+.animation-iteration-count(@arguments) {
+    -webkit-animation-iteration-count: @arguments;
+    animation-iteration-count: @arguments;
+}
+
+.animation-timing-function(@arguments) {
+    -webkit-animation-timing-function: @arguments;
+    animation-timing-function: @arguments;
+}
+
+.rotate {
+    margin-top: 10%;
+    height: 165.5px;
+    position: relative;
+    width: 165.5px;
+
+    .back {
+        .animation-name(flip-delay);
+        transform: rotateY(180deg);
+    }
+
+    .circle {
+        .animation-delay(3s);
+        .animation-duration(6s);
+        .animation-iteration-count(infinite);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        background-color: white;
+        border-radius: 150px;
+        color: #DD766E;
+        font-size: 32px;
+        height: 96px;
+        left: (165.5 - 96) / 2px;
+        line-height: 96px;
+        position: absolute;
+        text-align: center;
+        top: (165.5 - 96) / 2px;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        width: 96px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 96px 96px;
+    }
+
+    .i-wheel {
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    .normal {
+        .animation-name(flip);
+    }
+
+    @media(max-height: 500px) {
+        margin-top: 10%;
+        height: 120px;
+        width: 120px;
+        
+        .i-wheel {
+            background-size: 120px 120px;
+            height: 120px;
+            width: 120px;
+        }
+
+        .circle {
+            font-size: 26px;
+            height: 75px;
+            left: (120 - 75) / 2px;
+            line-height: 75px;
+            top: (120 - 75) / 2px;
+            width: 75px;
+            background-size: 75px 75px;
+        }
+    }
+    
+    &.big {
+        @media(min-height: 600px) {
+            top: ~"calc(50% - 300px)";
+            height: 240px;
+            width: 240px;
+            
+            .i-wheel {
+                background-size: 240px 240px;
+                height: 240px;
+                width: 240px;
+            }
+
+            .circle {
+                font-size: 50px;
+                height: 150px;
+                left: (240 - 150) / 2px;
+                line-height: 150px;
+                top: (240 - 150) / 2px;
+                width: 150px;
+                background-size: 150px 150px;
+            }
+        }
+    }
+}
+
+.white {
+    background-color: white;
+    bottom: 0;
+    color: #1688CB;
+    max-height: ~"calc(90% - 165.5px)";
+    overflow-y: auto;
+    padding: 10px 20px;
+    position: absolute;
+
+    @media(max-height: 500px) {
+        max-height: ~"calc(90% - 120px)";
+    }
+
+    & > * {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    color: #1688CB;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 375px;
+    padding: 0 20px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 90%;
+
+    & > * {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .close {
+        position: absolute;
+        padding: 5px;
+        right: 5px;
+        top: 0;
+    }
+
+    .input {
+        background-color: #D3ECFB;
+        border: none;
+        border-radius: 30px;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        text-align: start;
+        width: 230px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    img {
+        border-radius: 64px;
+        height: 64px;
+        margin-top: 20px;
+        width: 64px;
+    }
+}
+
+.gray {
+    color: #AAA;
+}

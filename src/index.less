@@ -1,0 +1,32 @@
+@factor: .5px;
+
+body,
+html {
+    background-color: #1688cb;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+body {
+    background-image: data-uri("img/bg.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 185 * @factor 124 * @factor;
+}
+
+app {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.loading {
+    color: white;
+    font-size: 22px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

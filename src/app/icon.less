@@ -1,0 +1,102 @@
+.icon(@name, @factor:0.5) {
+    background-image: data-uri("../img/@{name}.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: image-width("../img/@{name}.png") * @factor image-height("../img/@{name}.png") * @factor;
+    display: block;
+    height: image-height("../img/@{name}.png") * @factor;
+    width: image-width("../img/@{name}.png") * @factor;
+}
+
+.i-drop{
+    .icon(drop);
+
+    &.small {
+        .icon(drop, 1 / 2.5);
+    }
+}
+
+.i-good {
+    .icon(good);
+}
+
+.i-success {
+    .icon(success);
+}
+
+.i-t-good {
+    .icon(t-good, 1 / 1.5);
+}
+
+.i-bad {
+    .icon(bad);
+}
+
+.i-t-bad {
+    .icon(t-bad, 1 / 1.5);
+}
+
+.i-start {
+    .icon(start, 1 / 1.8);
+}
+
+.i-wheel {
+    .icon(wheel);
+}
+
+.i-answer {
+    .icon(answer, 1 / 1.8);
+
+    &.disabled {
+        .icon(answer-disabled, 1 / 1.8);
+    }
+}
+
+.i-see-answer{
+    .icon(see-answer, 1 / 1.8);
+}
+
+.i-know{
+    .icon(know, 1 / 1.8);
+}
+
+.i-input{
+    .icon(input);
+}
+
+.loop(@c:7) when (@c > -1) {
+    .loop((@c - 1));
+
+    .i-s@{c} {
+        .icon("s@{c}", 1 / 1.5);
+        background-position-x: left;
+        height: auto;
+
+        &.solid {
+            .icon("s@{c}-s", 1 / 1.5);
+            background-position-x: left;
+            height: auto;
+        }
+    }
+}
+.loop();
+
+.mask{
+    background-color: rgba(22, 136, 203, 0.6);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.share-mask {
+    .icon(share);
+    background-color: rgba(22, 136, 203, 0.6);
+    background-position: top right;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

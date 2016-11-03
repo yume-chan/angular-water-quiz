@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="result.component.css">
+
+<div class="content">
+	<div class="rotate center big">
+		<i class="i-wheel"></i>
+		<div class="circle normal">{{result.allScore}}分</div>
+		<div class="circle back" [style.backgroundImage]="'url(' + result.imgUrl + ')'"></div>
+	</div>
+	<div class="white">
+		<i class="i-see-answer center" *ngIf="!advanceMode || submitCount <= 3" [routerLink]="['/answer', result.userExamId]"></i>
+		<h2 class="orange text-center" *ngIf="advanceMode && submitCount > 3">查看测评答案</h2>
+		<div>{{result.comment}}</div>
+		<div>赶紧提交结果，获得矿泉水认知勋章，并分享到朋友圈，去辣一辣小伙伴们的眼睛吧。</div>
+		<template [ngIf]="!advanceMode || submitCount <= 3">
+			<a class="button big blue solid center" *ngIf="!result.submit" (click)="show()">提交结果 获得官方认知勋章</a>
+			<a class="button big blue solid center" *ngIf="result.submit">结果已提交</a>
+		</template>
+		<div class="font-small text-center">提交结果后，会保存并显示在浙江省矿联官网上</div>
+		<a class="button big blue center" *ngIf="advanceMode && submitCount > 3" routerLink="/rank">进入官网，查看排名</a>
+		<a class="button big blue center" (click)="share = true">分享朋友圈 辣一辣小伙伴们</a>
+		<a class="button big blue center" routerLink="">分数不够 重新挑战</a>
+	</div>
+
+	<div class="mask" *ngIf="showForm">
+		<form class="text-center">
+			<div class="close" style="margin: 0" (click)="showForm = false">X</div>
+			<img [attr.src]="appService.user.headImgUrl">
+			<i class="i-input center"></i>
+			<div><span>姓名：</span><input class="input" name="username" type="text" (change)="change($event)" [value]="realName" [placeholder]="appService.user.nickName"></div>
+			<div><span>城市：</span><span class="input" [class.gray]="!appService.user.city" routerLink="/city">{{appService.user.city ? appService.user.province + appService.user.city : '必填'}}</span></div>
+			<a class="button big blue center" [class.disabled]="!appService.user.city" (click)="submit()">确认提交</a>
+			<div class="font-small">注：本测试由浙江省矿业联合会全程监管可进入省矿业联合会官网进行查看</div>
+		</form>
+	</div>
+
+	<div class="share-mask" *ngIf="share" (click)="share = false"></div>
+</div>

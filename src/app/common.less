@@ -1,0 +1,144 @@
+@import 'animate';
+@import 'icon';
+
+@factor: .5px;
+
+* {
+    box-sizing: border-box;
+    max-height: 10000000px;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+:host {
+    .animation-name(right-fly-in);
+    .animation-duration(600ms);
+    background-color: #1688cb;
+    background-image: data-uri("../img/bg.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 185 * @factor 124 * @factor;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.content {
+    color: white;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 375px;
+    overflow: auto;
+    position: relative;
+}
+
+.button {
+    border: 1px solid white;
+    border-radius: 32px;
+    color: white;
+    display: inline-block;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    width: 100px;
+
+    &.big {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: auto;
+    }
+
+    &.blue {
+        border-color: #1688CB;
+        color: #1688CB;
+    }
+
+    &.middle {
+        width: 120px;
+    }
+
+    &.solid {
+        background: white;
+        color: #1688CB;
+
+        &.blue {
+            background: #54B8E2;
+            border-color: #54B8E2;
+            color: white;
+        }
+    }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.box {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.font-small {
+    font-size: 12px;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 15px 20px;
+
+    & > * {
+        flex: 0 0 auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+.ring {
+    .icon(ring);
+    .animation-name(rotate);
+    .animation-duration(1s);
+    .animation-iteration-count(infinite);
+    .animation-timing-function(linear);
+}
+
+.orange {
+    color: #E88E42;
+}
