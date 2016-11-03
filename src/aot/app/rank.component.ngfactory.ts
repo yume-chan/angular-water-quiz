@@ -138,7 +138,7 @@ class _View_RankComponent0 extends import1.AppView<import0.RankComponent> {
     this._el_3 = import4.createRenderElement(this.renderer,parentRenderNode,'div',new import4.InlineArray2(2,'class','content flex-column'),(null as any));
     this._NgSwitch_3_3 = new import14.Wrapper_NgSwitch();
     this._text_4 = this.renderer.createText(this._el_3,'\n	',(null as any));
-    this._el_5 = import4.createRenderElement(this.renderer,this._el_3,'div',new import4.InlineArray2(2,'class','rotate center'),(null as any));
+    this._el_5 = import4.createRenderElement(this.renderer,this._el_3,'div',new import4.InlineArray2(2,'class','wheel center'),(null as any));
     this._text_6 = this.renderer.createText(this._el_5,'\n		',(null as any));
     this._el_7 = import4.createRenderElement(this.renderer,this._el_5,'i',new import4.InlineArray2(2,'class','i-wheel'),(null as any));
     this._text_8 = this.renderer.createText(this._el_5,'\n		',(null as any));
@@ -440,7 +440,7 @@ class _View_RankComponent3 extends import1.AppView<any> {
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._text_0 = this.renderer.createText((null as any),'\n		',(null as any));
-    this._el_1 = import4.createRenderElement(this.renderer,(null as any),'div',new import4.InlineArray2(2,'class','box'),(null as any));
+    this._el_1 = import4.createRenderElement(this.renderer,(null as any),'div',new import4.InlineArray2(2,'class','box text-center'),(null as any));
     this._text_2 = this.renderer.createText(this._el_1,'\n			',(null as any));
     this._el_3 = import4.createRenderElement(this.renderer,this._el_1,'span',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._text_4 = this.renderer.createText(this._el_3,'',(null as any));

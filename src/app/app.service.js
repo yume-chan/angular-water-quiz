@@ -166,7 +166,13 @@ export var AppService = (function () {
         return this.post('data/get-projects.cgi', {
             userExamId: userExamId,
             userId: this.user.userId
-        }).then(function (data) { return data.subject; });
+        }).then(function (data) {
+            if (data.code == 6000) {
+                alert(data.message);
+                throw new Error(data.message);
+            }
+            return data.subject;
+        });
     };
     AppService.prototype.getAnswer = function (question) {
         var _this = this;

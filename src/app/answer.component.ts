@@ -45,9 +45,7 @@ export class AnswerComponent implements OnInit {
         this.id = +this.route.snapshot.params["id"];
         this.appService
             .getProjects(this.id)
-            .then(questions => {
-                this.questions = questions;
-            })
+            .then(questions => this.questions = questions)
             .catch(err => history.back());
     }
 

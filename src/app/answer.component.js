@@ -13,9 +13,7 @@ export var AnswerComponent = (function () {
         this.id = +this.route.snapshot.params["id"];
         this.appService
             .getProjects(this.id)
-            .then(function (questions) {
-            _this.questions = questions;
-        })
+            .then(function (questions) { return _this.questions = questions; })
             .catch(function (err) { return history.back(); });
     };
     AnswerComponent.prototype.showAnswer = function (item) {

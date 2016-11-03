@@ -142,7 +142,7 @@ class _View_SubmitComponent0 extends import3.AppView<import0.SubmitComponent> {
     this._text_2 = this.renderer.createText(parentRenderNode,'\n',(null as any));
     this._el_3 = import2.createRenderElement(this.renderer,parentRenderNode,'div',new import2.InlineArray2(2,'class','content'),(null as any));
     this._text_4 = this.renderer.createText(this._el_3,'\n	',(null as any));
-    this._el_5 = import2.createRenderElement(this.renderer,this._el_3,'div',new import2.InlineArray2(2,'class','rotate center'),(null as any));
+    this._el_5 = import2.createRenderElement(this.renderer,this._el_3,'div',new import2.InlineArray2(2,'class','wheel center'),(null as any));
     this._text_6 = this.renderer.createText(this._el_5,'\n		',(null as any));
     this._el_7 = import2.createRenderElement(this.renderer,this._el_5,'i',new import2.InlineArray2(2,'class','i-wheel'),(null as any));
     this._text_8 = this.renderer.createText(this._el_5,'\n		',(null as any));

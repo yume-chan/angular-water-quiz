@@ -2,10 +2,10 @@
     background-image: data-uri("../img/@{name}.png");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: image-width("../img/@{name}.png") * @factor image-height("../img/@{name}.png") * @factor;
+    background-size: floor(image-width("../img/@{name}.png") * @factor) floor(image-height("../img/@{name}.png") * @factor);
     display: block;
-    height: image-height("../img/@{name}.png") * @factor;
-    width: image-width("../img/@{name}.png") * @factor;
+    height: floor(image-height("../img/@{name}.png") * @factor);
+    width: floor(image-width("../img/@{name}.png") * @factor);
 }
 
 .i-drop{

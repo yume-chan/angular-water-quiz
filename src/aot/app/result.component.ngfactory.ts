@@ -167,7 +167,7 @@ class _View_ResultComponent0 extends import3.AppView<import0.ResultComponent> {
     this._text_1 = this.renderer.createText(parentRenderNode,'\n\n',(null as any));
     this._el_2 = import2.createRenderElement(this.renderer,parentRenderNode,'div',new import2.InlineArray2(2,'class','content'),(null as any));
     this._text_3 = this.renderer.createText(this._el_2,'\n	',(null as any));
-    this._el_4 = import2.createRenderElement(this.renderer,this._el_2,'div',new import2.InlineArray2(2,'class','rotate center big'),(null as any));
+    this._el_4 = import2.createRenderElement(this.renderer,this._el_2,'div',new import2.InlineArray2(2,'class','wheel center big'),(null as any));
     this._text_5 = this.renderer.createText(this._el_4,'\n		',(null as any));
     this._el_6 = import2.createRenderElement(this.renderer,this._el_4,'i',new import2.InlineArray2(2,'class','i-wheel'),(null as any));
     this._text_7 = this.renderer.createText(this._el_4,'\n		',(null as any));

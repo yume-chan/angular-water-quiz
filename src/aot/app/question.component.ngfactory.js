@@ -90,8 +90,8 @@ var _View_QuestionComponent0 = (function (_super) {
     __extends(_View_QuestionComponent0, _super);
     function _View_QuestionComponent0(viewUtils, parentInjector, declarationEl) {
         _super.call(this, _View_QuestionComponent0, renderType_QuestionComponent, import7.ViewType.COMPONENT, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
-        this._expr_49 = import1.UNINITIALIZED;
-        this._expr_50 = import1.UNINITIALIZED;
+        this._expr_41 = import1.UNINITIALIZED;
+        this._expr_42 = import1.UNINITIALIZED;
     }
     _View_QuestionComponent0.prototype.createInternal = function (rootSelector) {
         var parentRenderNode = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
@@ -115,35 +115,27 @@ var _View_QuestionComponent0 = (function (_super) {
         this._TemplateRef_14_5 = new import15.TemplateRef_(this._appEl_14, viewFactory_QuestionComponent1);
         this._NgSwitchCase_14_6 = new import13.Wrapper_NgSwitchCase(this._appEl_14.vcRef, this._TemplateRef_14_5, this._NgSwitch_12_3.context);
         this._text_15 = this.renderer.createText(this._el_12, '\n		', null);
-        this._anchor_16 = this.renderer.createTemplateAnchor(this._el_12, null);
-        this._appEl_16 = new import5.AppElement(16, 12, this, this._anchor_16);
-        this._TemplateRef_16_5 = new import15.TemplateRef_(this._appEl_16, viewFactory_QuestionComponent3);
-        this._NgSwitchCase_16_6 = new import13.Wrapper_NgSwitchCase(this._appEl_16.vcRef, this._TemplateRef_16_5, this._NgSwitch_12_3.context);
-        this._text_17 = this.renderer.createText(this._el_12, '\n		', null);
-        this._anchor_18 = this.renderer.createTemplateAnchor(this._el_12, null);
-        this._appEl_18 = new import5.AppElement(18, 12, this, this._anchor_18);
-        this._TemplateRef_18_5 = new import15.TemplateRef_(this._appEl_18, viewFactory_QuestionComponent5);
-        this._NgSwitchCase_18_6 = new import13.Wrapper_NgSwitchCase(this._appEl_18.vcRef, this._TemplateRef_18_5, this._NgSwitch_12_3.context);
-        this._text_19 = this.renderer.createText(this._el_12, '\n		', null);
-        this._anchor_20 = this.renderer.createTemplateAnchor(this._el_12, null);
-        this._appEl_20 = new import5.AppElement(20, 12, this, this._anchor_20);
-        this._TemplateRef_20_5 = new import15.TemplateRef_(this._appEl_20, viewFactory_QuestionComponent7);
-        this._NgSwitchDefault_20_6 = new import13.Wrapper_NgSwitchDefault(this._appEl_20.vcRef, this._TemplateRef_20_5, this._NgSwitch_12_3.context);
-        this._text_21 = this.renderer.createText(this._el_12, '\n	', null);
-        this._text_22 = this.renderer.createText(this._el_2, '\n	', null);
-        this._el_23 = import2.createRenderElement(this.renderer, this._el_2, 'div', new import2.InlineArray2(2, 'style', 'height: 30px'), null);
-        this._text_24 = this.renderer.createText(this._el_23, '\n		', null);
-        this._anchor_25 = this.renderer.createTemplateAnchor(this._el_23, null);
-        this._appEl_25 = new import5.AppElement(25, 23, this, this._anchor_25);
-        this._TemplateRef_25_5 = new import15.TemplateRef_(this._appEl_25, viewFactory_QuestionComponent9);
-        this._NgIf_25_6 = new import14.Wrapper_NgIf(this._appEl_25.vcRef, this._TemplateRef_25_5);
-        this._text_26 = this.renderer.createText(this._el_23, '\n	', null);
-        this._text_27 = this.renderer.createText(this._el_2, '\n', null);
-        this._text_28 = this.renderer.createText(parentRenderNode, '\n', null);
-        this._anchor_29 = this.renderer.createTemplateAnchor(parentRenderNode, null);
-        this._appEl_29 = new import5.AppElement(29, null, this, this._anchor_29);
-        this._TemplateRef_29_5 = new import15.TemplateRef_(this._appEl_29, viewFactory_QuestionComponent10);
-        this._NgIf_29_6 = new import14.Wrapper_NgIf(this._appEl_29.vcRef, this._TemplateRef_29_5);
+        this._text_16 = this.renderer.createText(this._el_12, '\n		', null);
+        this._anchor_17 = this.renderer.createTemplateAnchor(this._el_12, null);
+        this._appEl_17 = new import5.AppElement(17, 12, this, this._anchor_17);
+        this._TemplateRef_17_5 = new import15.TemplateRef_(this._appEl_17, viewFactory_QuestionComponent3);
+        this._NgSwitchDefault_17_6 = new import13.Wrapper_NgSwitchDefault(this._appEl_17.vcRef, this._TemplateRef_17_5, this._NgSwitch_12_3.context);
+        this._text_18 = this.renderer.createText(this._el_12, '\n		', null);
+        this._text_19 = this.renderer.createText(this._el_12, '\n	', null);
+        this._text_20 = this.renderer.createText(this._el_2, '\n	', null);
+        this._el_21 = import2.createRenderElement(this.renderer, this._el_2, 'div', new import2.InlineArray2(2, 'style', 'height: 30px'), null);
+        this._text_22 = this.renderer.createText(this._el_21, '\n		', null);
+        this._anchor_23 = this.renderer.createTemplateAnchor(this._el_21, null);
+        this._appEl_23 = new import5.AppElement(23, 21, this, this._anchor_23);
+        this._TemplateRef_23_5 = new import15.TemplateRef_(this._appEl_23, viewFactory_QuestionComponent5);
+        this._NgIf_23_6 = new import14.Wrapper_NgIf(this._appEl_23.vcRef, this._TemplateRef_23_5);
+        this._text_24 = this.renderer.createText(this._el_21, '\n	', null);
+        this._text_25 = this.renderer.createText(this._el_2, '\n', null);
+        this._text_26 = this.renderer.createText(parentRenderNode, '\n', null);
+        this._anchor_27 = this.renderer.createTemplateAnchor(parentRenderNode, null);
+        this._appEl_27 = new import5.AppElement(27, null, this, this._anchor_27);
+        this._TemplateRef_27_5 = new import15.TemplateRef_(this._appEl_27, viewFactory_QuestionComponent6);
+        this._NgIf_27_6 = new import14.Wrapper_NgIf(this._appEl_27.vcRef, this._TemplateRef_27_5);
         this.init([], [
             this._text_0,
             this._text_1,
@@ -161,20 +153,18 @@ var _View_QuestionComponent0 = (function (_super) {
             this._text_13,
             this._anchor_14,
             this._text_15,
-            this._anchor_16,
-            this._text_17,
-            this._anchor_18,
+            this._text_16,
+            this._anchor_17,
+            this._text_18,
             this._text_19,
-            this._anchor_20,
-            this._text_21,
+            this._text_20,
+            this._el_21,
             this._text_22,
-            this._el_23,
+            this._anchor_23,
             this._text_24,
-            this._anchor_25,
+            this._text_25,
             this._text_26,
-            this._text_27,
-            this._text_28,
-            this._anchor_29
+            this._anchor_27
         ], [], []);
         return null;
     };
@@ -185,38 +175,26 @@ var _View_QuestionComponent0 = (function (_super) {
         if (((token === import16.NgSwitchCase) && (14 === requestNodeIndex))) {
             return this._NgSwitchCase_14_6.context;
         }
-        if (((token === import15.TemplateRef) && (16 === requestNodeIndex))) {
-            return this._TemplateRef_16_5;
+        if (((token === import15.TemplateRef) && (17 === requestNodeIndex))) {
+            return this._TemplateRef_17_5;
         }
-        if (((token === import16.NgSwitchCase) && (16 === requestNodeIndex))) {
-            return this._NgSwitchCase_16_6.context;
+        if (((token === import16.NgSwitchDefault) && (17 === requestNodeIndex))) {
+            return this._NgSwitchDefault_17_6.context;
         }
-        if (((token === import15.TemplateRef) && (18 === requestNodeIndex))) {
-            return this._TemplateRef_18_5;
-        }
-        if (((token === import16.NgSwitchCase) && (18 === requestNodeIndex))) {
-            return this._NgSwitchCase_18_6.context;
-        }
-        if (((token === import15.TemplateRef) && (20 === requestNodeIndex))) {
-            return this._TemplateRef_20_5;
-        }
-        if (((token === import16.NgSwitchDefault) && (20 === requestNodeIndex))) {
-            return this._NgSwitchDefault_20_6.context;
-        }
-        if (((token === import16.NgSwitch) && ((12 <= requestNodeIndex) && (requestNodeIndex <= 21)))) {
+        if (((token === import16.NgSwitch) && ((12 <= requestNodeIndex) && (requestNodeIndex <= 19)))) {
             return this._NgSwitch_12_3.context;
         }
-        if (((token === import15.TemplateRef) && (25 === requestNodeIndex))) {
-            return this._TemplateRef_25_5;
+        if (((token === import15.TemplateRef) && (23 === requestNodeIndex))) {
+            return this._TemplateRef_23_5;
         }
-        if (((token === import17.NgIf) && (25 === requestNodeIndex))) {
-            return this._NgIf_25_6.context;
+        if (((token === import17.NgIf) && (23 === requestNodeIndex))) {
+            return this._NgIf_23_6.context;
         }
-        if (((token === import15.TemplateRef) && (29 === requestNodeIndex))) {
-            return this._TemplateRef_29_5;
+        if (((token === import15.TemplateRef) && (27 === requestNodeIndex))) {
+            return this._TemplateRef_27_5;
         }
-        if (((token === import17.NgIf) && (29 === requestNodeIndex))) {
-            return this._NgIf_29_6.context;
+        if (((token === import17.NgIf) && (27 === requestNodeIndex))) {
+            return this._NgIf_27_6.context;
         }
         return notFoundResult;
     };
@@ -227,29 +205,23 @@ var _View_QuestionComponent0 = (function (_super) {
         var currVal_14_0_0 = 2;
         this._NgSwitchCase_14_6.check_ngSwitchCase(currVal_14_0_0, throwOnChange, false);
         this._NgSwitchCase_14_6.detectChangesInInputProps(this, this._anchor_14, throwOnChange);
-        var currVal_16_0_0 = 3;
-        this._NgSwitchCase_16_6.check_ngSwitchCase(currVal_16_0_0, throwOnChange, false);
-        this._NgSwitchCase_16_6.detectChangesInInputProps(this, this._anchor_16, throwOnChange);
-        var currVal_18_0_0 = 4;
-        this._NgSwitchCase_18_6.check_ngSwitchCase(currVal_18_0_0, throwOnChange, false);
-        this._NgSwitchCase_18_6.detectChangesInInputProps(this, this._anchor_18, throwOnChange);
-        this._NgSwitchDefault_20_6.detectChangesInInputProps(this, this._anchor_20, throwOnChange);
-        var currVal_25_0_0 = this.context.canNext;
-        this._NgIf_25_6.check_ngIf(currVal_25_0_0, throwOnChange, false);
-        this._NgIf_25_6.detectChangesInInputProps(this, this._anchor_25, throwOnChange);
-        var currVal_29_0_0 = this.context.result;
-        this._NgIf_29_6.check_ngIf(currVal_29_0_0, throwOnChange, false);
-        this._NgIf_29_6.detectChangesInInputProps(this, this._anchor_29, throwOnChange);
+        this._NgSwitchDefault_17_6.detectChangesInInputProps(this, this._anchor_17, throwOnChange);
+        var currVal_23_0_0 = this.context.canNext;
+        this._NgIf_23_6.check_ngIf(currVal_23_0_0, throwOnChange, false);
+        this._NgIf_23_6.detectChangesInInputProps(this, this._anchor_23, throwOnChange);
+        var currVal_27_0_0 = this.context.result;
+        this._NgIf_27_6.check_ngIf(currVal_27_0_0, throwOnChange, false);
+        this._NgIf_27_6.detectChangesInInputProps(this, this._anchor_27, throwOnChange);
         this.detectContentChildrenChanges(throwOnChange);
-        var currVal_49 = import2.interpolate(2, '问题', this.context.question.order, ' (', ((this.context.question.type == 1) ? '选择题' : '判断题'), ')');
-        if (import2.checkBinding(throwOnChange, this._expr_49, currVal_49)) {
-            this.renderer.setText(this._text_7, currVal_49);
-            this._expr_49 = currVal_49;
+        var currVal_41 = import2.interpolate(2, '问题', this.context.question.order, ' (', ((this.context.question.type == 1) ? '选择题' : '判断题'), ')');
+        if (import2.checkBinding(throwOnChange, this._expr_41, currVal_41)) {
+            this.renderer.setText(this._text_7, currVal_41);
+            this._expr_41 = currVal_41;
         }
-        var currVal_50 = import2.interpolate(1, '', this.context.question.content, '');
-        if (import2.checkBinding(throwOnChange, this._expr_50, currVal_50)) {
-            this.renderer.setText(this._text_10, currVal_50);
-            this._expr_50 = currVal_50;
+        var currVal_42 = import2.interpolate(1, '', this.context.question.content, '');
+        if (import2.checkBinding(throwOnChange, this._expr_42, currVal_42)) {
+            this.renderer.setText(this._text_10, currVal_42);
+            this._expr_42 = currVal_42;
         }
         this._NgSwitch_12_3.detectChangesInHostProps(this, this._el_12, throwOnChange);
         this.detectViewChildrenChanges(throwOnChange);
@@ -460,38 +432,19 @@ var _View_QuestionComponent5 = (function (_super) {
         _super.call(this, _View_QuestionComponent5, renderType_QuestionComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
     }
     _View_QuestionComponent5.prototype.createInternal = function (rootSelector) {
-        this._text_0 = this.renderer.createText(null, '\n			', null);
-        this._anchor_1 = this.renderer.createTemplateAnchor(null, null);
-        this._appEl_1 = new import5.AppElement(1, null, this, this._anchor_1);
-        this._TemplateRef_1_5 = new import15.TemplateRef_(this._appEl_1, viewFactory_QuestionComponent6);
-        this._NgFor_1_6 = new import18.Wrapper_NgFor(this._appEl_1.vcRef, this._TemplateRef_1_5, this.parent.parentInjector.get(import19.IterableDiffers), this.parent.ref);
-        this._text_2 = this.renderer.createText(null, '\n		', null);
-        this.init([].concat([
-            this._text_0,
-            this._appEl_1,
-            this._text_2
-        ]), [
-            this._text_0,
-            this._anchor_1,
-            this._text_2
-        ], [], []);
+        this._el_0 = import2.createRenderElement(this.renderer, null, 'a', new import2.InlineArray2(2, 'class', 'button center'), null);
+        this._text_1 = this.renderer.createText(this._el_0, 'OK', null);
+        var disposable_0 = this.renderer.listen(this._el_0, 'click', this.eventHandler(this._handle_click_0_0.bind(this)));
+        this.init([].concat([this._el_0]), [
+            this._el_0,
+            this._text_1
+        ], [disposable_0], []);
         return null;
     };
-    _View_QuestionComponent5.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import15.TemplateRef) && (1 === requestNodeIndex))) {
-            return this._TemplateRef_1_5;
-        }
-        if (((token === import20.NgFor) && (1 === requestNodeIndex))) {
-            return this._NgFor_1_6.context;
-        }
-        return notFoundResult;
-    };
-    _View_QuestionComponent5.prototype.detectChangesInternal = function (throwOnChange) {
-        var currVal_1_0_0 = this.parent.context.question.subjectOptionList;
-        this._NgFor_1_6.check_ngForOf(currVal_1_0_0, throwOnChange, false);
-        this._NgFor_1_6.detectChangesInInputProps(this, this._anchor_1, throwOnChange);
-        this.detectContentChildrenChanges(throwOnChange);
-        this.detectViewChildrenChanges(throwOnChange);
+    _View_QuestionComponent5.prototype._handle_click_0_0 = function ($event) {
+        this.markPathToRootAsCheckOnce();
+        var pd_0_0 = (this.parent.context.submit() !== false);
+        return (true && pd_0_0);
     };
     return _View_QuestionComponent5;
 }(import3.AppView));
@@ -502,187 +455,8 @@ var _View_QuestionComponent6 = (function (_super) {
     __extends(_View_QuestionComponent6, _super);
     function _View_QuestionComponent6(viewUtils, parentInjector, declarationEl) {
         _super.call(this, _View_QuestionComponent6, renderType_QuestionComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
-        this._expr_4 = import1.UNINITIALIZED;
-        this._expr_5 = import1.UNINITIALIZED;
-        this._expr_6 = import1.UNINITIALIZED;
     }
     _View_QuestionComponent6.prototype.createInternal = function (rootSelector) {
-        this._text_0 = this.renderer.createText(null, '\n				', null);
-        this._el_1 = import2.createRenderElement(this.renderer, null, 'a', import2.EMPTY_INLINE_ARRAY, null);
-        this._text_2 = this.renderer.createText(this._el_1, '', null);
-        this._text_3 = this.renderer.createText(null, '\n			', null);
-        var disposable_0 = this.renderer.listen(this._el_1, 'click', this.eventHandler(this._handle_click_1_0.bind(this)));
-        this.init([].concat([
-            this._text_0,
-            this._el_1,
-            this._text_3
-        ]), [
-            this._text_0,
-            this._el_1,
-            this._text_2,
-            this._text_3
-        ], [disposable_0], []);
-        return null;
-    };
-    _View_QuestionComponent6.prototype.detectChangesInternal = function (throwOnChange) {
-        this.detectContentChildrenChanges(throwOnChange);
-        var currVal_4 = import2.interpolate(1, '', ('checkbox wide i-s' + this.context.index), '');
-        if (import2.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
-            this.renderer.setElementProperty(this._el_1, 'className', currVal_4);
-            this._expr_4 = currVal_4;
-        }
-        var currVal_5 = this.context.$implicit.checked;
-        if (import2.checkBinding(throwOnChange, this._expr_5, currVal_5)) {
-            this.renderer.setElementClass(this._el_1, 'solid', currVal_5);
-            this._expr_5 = currVal_5;
-        }
-        var currVal_6 = import2.interpolate(1, '', this.context.$implicit.optionDetail, '');
-        if (import2.checkBinding(throwOnChange, this._expr_6, currVal_6)) {
-            this.renderer.setText(this._text_2, currVal_6);
-            this._expr_6 = currVal_6;
-        }
-        this.detectViewChildrenChanges(throwOnChange);
-    };
-    _View_QuestionComponent6.prototype._handle_click_1_0 = function ($event) {
-        this.markPathToRootAsCheckOnce();
-        var pd_1_0 = (this.parent.parent.context.change(this.context.$implicit) !== false);
-        return (true && pd_1_0);
-    };
-    return _View_QuestionComponent6;
-}(import3.AppView));
-function viewFactory_QuestionComponent6(viewUtils, parentInjector, declarationEl) {
-    return new _View_QuestionComponent6(viewUtils, parentInjector, declarationEl);
-}
-var _View_QuestionComponent7 = (function (_super) {
-    __extends(_View_QuestionComponent7, _super);
-    function _View_QuestionComponent7(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_QuestionComponent7, renderType_QuestionComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
-    }
-    _View_QuestionComponent7.prototype.createInternal = function (rootSelector) {
-        this._text_0 = this.renderer.createText(null, '\n			', null);
-        this._anchor_1 = this.renderer.createTemplateAnchor(null, null);
-        this._appEl_1 = new import5.AppElement(1, null, this, this._anchor_1);
-        this._TemplateRef_1_5 = new import15.TemplateRef_(this._appEl_1, viewFactory_QuestionComponent8);
-        this._NgFor_1_6 = new import18.Wrapper_NgFor(this._appEl_1.vcRef, this._TemplateRef_1_5, this.parent.parentInjector.get(import19.IterableDiffers), this.parent.ref);
-        this._text_2 = this.renderer.createText(null, '\n		', null);
-        this.init([].concat([
-            this._text_0,
-            this._appEl_1,
-            this._text_2
-        ]), [
-            this._text_0,
-            this._anchor_1,
-            this._text_2
-        ], [], []);
-        return null;
-    };
-    _View_QuestionComponent7.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import15.TemplateRef) && (1 === requestNodeIndex))) {
-            return this._TemplateRef_1_5;
-        }
-        if (((token === import20.NgFor) && (1 === requestNodeIndex))) {
-            return this._NgFor_1_6.context;
-        }
-        return notFoundResult;
-    };
-    _View_QuestionComponent7.prototype.detectChangesInternal = function (throwOnChange) {
-        var currVal_1_0_0 = this.parent.context.question.subjectOptionList;
-        this._NgFor_1_6.check_ngForOf(currVal_1_0_0, throwOnChange, false);
-        this._NgFor_1_6.detectChangesInInputProps(this, this._anchor_1, throwOnChange);
-        this.detectContentChildrenChanges(throwOnChange);
-        this.detectViewChildrenChanges(throwOnChange);
-    };
-    return _View_QuestionComponent7;
-}(import3.AppView));
-function viewFactory_QuestionComponent7(viewUtils, parentInjector, declarationEl) {
-    return new _View_QuestionComponent7(viewUtils, parentInjector, declarationEl);
-}
-var _View_QuestionComponent8 = (function (_super) {
-    __extends(_View_QuestionComponent8, _super);
-    function _View_QuestionComponent8(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_QuestionComponent8, renderType_QuestionComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
-        this._expr_4 = import1.UNINITIALIZED;
-        this._expr_5 = import1.UNINITIALIZED;
-        this._expr_6 = import1.UNINITIALIZED;
-    }
-    _View_QuestionComponent8.prototype.createInternal = function (rootSelector) {
-        this._text_0 = this.renderer.createText(null, '\n				', null);
-        this._el_1 = import2.createRenderElement(this.renderer, null, 'a', import2.EMPTY_INLINE_ARRAY, null);
-        this._text_2 = this.renderer.createText(this._el_1, '', null);
-        this._text_3 = this.renderer.createText(null, '\n			', null);
-        var disposable_0 = this.renderer.listen(this._el_1, 'click', this.eventHandler(this._handle_click_1_0.bind(this)));
-        this.init([].concat([
-            this._text_0,
-            this._el_1,
-            this._text_3
-        ]), [
-            this._text_0,
-            this._el_1,
-            this._text_2,
-            this._text_3
-        ], [disposable_0], []);
-        return null;
-    };
-    _View_QuestionComponent8.prototype.detectChangesInternal = function (throwOnChange) {
-        this.detectContentChildrenChanges(throwOnChange);
-        var currVal_4 = import2.interpolate(1, '', ('checkbox i-s' + this.context.index), '');
-        if (import2.checkBinding(throwOnChange, this._expr_4, currVal_4)) {
-            this.renderer.setElementProperty(this._el_1, 'className', currVal_4);
-            this._expr_4 = currVal_4;
-        }
-        var currVal_5 = this.context.$implicit.checked;
-        if (import2.checkBinding(throwOnChange, this._expr_5, currVal_5)) {
-            this.renderer.setElementClass(this._el_1, 'solid', currVal_5);
-            this._expr_5 = currVal_5;
-        }
-        var currVal_6 = import2.interpolate(1, '', this.context.$implicit.optionDetail, '');
-        if (import2.checkBinding(throwOnChange, this._expr_6, currVal_6)) {
-            this.renderer.setText(this._text_2, currVal_6);
-            this._expr_6 = currVal_6;
-        }
-        this.detectViewChildrenChanges(throwOnChange);
-    };
-    _View_QuestionComponent8.prototype._handle_click_1_0 = function ($event) {
-        this.markPathToRootAsCheckOnce();
-        var pd_1_0 = (this.parent.parent.context.change(this.context.$implicit) !== false);
-        return (true && pd_1_0);
-    };
-    return _View_QuestionComponent8;
-}(import3.AppView));
-function viewFactory_QuestionComponent8(viewUtils, parentInjector, declarationEl) {
-    return new _View_QuestionComponent8(viewUtils, parentInjector, declarationEl);
-}
-var _View_QuestionComponent9 = (function (_super) {
-    __extends(_View_QuestionComponent9, _super);
-    function _View_QuestionComponent9(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_QuestionComponent9, renderType_QuestionComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
-    }
-    _View_QuestionComponent9.prototype.createInternal = function (rootSelector) {
-        this._el_0 = import2.createRenderElement(this.renderer, null, 'a', new import2.InlineArray2(2, 'class', 'button center'), null);
-        this._text_1 = this.renderer.createText(this._el_0, 'OK', null);
-        var disposable_0 = this.renderer.listen(this._el_0, 'click', this.eventHandler(this._handle_click_0_0.bind(this)));
-        this.init([].concat([this._el_0]), [
-            this._el_0,
-            this._text_1
-        ], [disposable_0], []);
-        return null;
-    };
-    _View_QuestionComponent9.prototype._handle_click_0_0 = function ($event) {
-        this.markPathToRootAsCheckOnce();
-        var pd_0_0 = (this.parent.context.submit() !== false);
-        return (true && pd_0_0);
-    };
-    return _View_QuestionComponent9;
-}(import3.AppView));
-function viewFactory_QuestionComponent9(viewUtils, parentInjector, declarationEl) {
-    return new _View_QuestionComponent9(viewUtils, parentInjector, declarationEl);
-}
-var _View_QuestionComponent10 = (function (_super) {
-    __extends(_View_QuestionComponent10, _super);
-    function _View_QuestionComponent10(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_QuestionComponent10, renderType_QuestionComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
-    }
-    _View_QuestionComponent10.prototype.createInternal = function (rootSelector) {
         this._el_0 = import2.createRenderElement(this.renderer, null, 'div', new import2.InlineArray2(2, 'class', 'mask'), null);
         this._text_1 = this.renderer.createText(this._el_0, '\n	', null);
         this._el_2 = import2.createRenderElement(this.renderer, this._el_0, 'div', new import2.InlineArray2(2, 'class', 'result center'), null);
@@ -690,12 +464,12 @@ var _View_QuestionComponent10 = (function (_super) {
         this._text_3 = this.renderer.createText(this._el_2, '\n		', null);
         this._anchor_4 = this.renderer.createTemplateAnchor(this._el_2, null);
         this._appEl_4 = new import5.AppElement(4, 2, this, this._anchor_4);
-        this._TemplateRef_4_5 = new import15.TemplateRef_(this._appEl_4, viewFactory_QuestionComponent11);
+        this._TemplateRef_4_5 = new import15.TemplateRef_(this._appEl_4, viewFactory_QuestionComponent7);
         this._NgSwitchCase_4_6 = new import13.Wrapper_NgSwitchCase(this._appEl_4.vcRef, this._TemplateRef_4_5, this._NgSwitch_2_3.context);
         this._text_5 = this.renderer.createText(this._el_2, '\n		', null);
         this._anchor_6 = this.renderer.createTemplateAnchor(this._el_2, null);
         this._appEl_6 = new import5.AppElement(6, 2, this, this._anchor_6);
-        this._TemplateRef_6_5 = new import15.TemplateRef_(this._appEl_6, viewFactory_QuestionComponent12);
+        this._TemplateRef_6_5 = new import15.TemplateRef_(this._appEl_6, viewFactory_QuestionComponent8);
         this._NgSwitchDefault_6_6 = new import13.Wrapper_NgSwitchDefault(this._appEl_6.vcRef, this._TemplateRef_6_5, this._NgSwitch_2_3.context);
         this._text_7 = this.renderer.createText(this._el_2, '\n		', null);
         this._text_8 = this.renderer.createText(this._el_2, '\n	', null);
@@ -715,7 +489,7 @@ var _View_QuestionComponent10 = (function (_super) {
         ], [disposable_0], []);
         return null;
     };
-    _View_QuestionComponent10.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
+    _View_QuestionComponent6.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
         if (((token === import15.TemplateRef) && (4 === requestNodeIndex))) {
             return this._TemplateRef_4_5;
         }
@@ -733,7 +507,7 @@ var _View_QuestionComponent10 = (function (_super) {
         }
         return notFoundResult;
     };
-    _View_QuestionComponent10.prototype.detectChangesInternal = function (throwOnChange) {
+    _View_QuestionComponent6.prototype.detectChangesInternal = function (throwOnChange) {
         var currVal_2_0_0 = this.parent.context.result.flag;
         this._NgSwitch_2_3.check_ngSwitch(currVal_2_0_0, throwOnChange, false);
         this._NgSwitch_2_3.detectChangesInInputProps(this, this._el_2, throwOnChange);
@@ -745,23 +519,23 @@ var _View_QuestionComponent10 = (function (_super) {
         this._NgSwitch_2_3.detectChangesInHostProps(this, this._el_2, throwOnChange);
         this.detectViewChildrenChanges(throwOnChange);
     };
-    _View_QuestionComponent10.prototype._handle_click_0_0 = function ($event) {
+    _View_QuestionComponent6.prototype._handle_click_0_0 = function ($event) {
         this.markPathToRootAsCheckOnce();
         var pd_0_0 = (this.parent.context.next() !== false);
         return (true && pd_0_0);
     };
-    return _View_QuestionComponent10;
+    return _View_QuestionComponent6;
 }(import3.AppView));
-function viewFactory_QuestionComponent10(viewUtils, parentInjector, declarationEl) {
-    return new _View_QuestionComponent10(viewUtils, parentInjector, declarationEl);
+function viewFactory_QuestionComponent6(viewUtils, parentInjector, declarationEl) {
+    return new _View_QuestionComponent6(viewUtils, parentInjector, declarationEl);
 }
-var _View_QuestionComponent11 = (function (_super) {
-    __extends(_View_QuestionComponent11, _super);
-    function _View_QuestionComponent11(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_QuestionComponent11, renderType_QuestionComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
+var _View_QuestionComponent7 = (function (_super) {
+    __extends(_View_QuestionComponent7, _super);
+    function _View_QuestionComponent7(viewUtils, parentInjector, declarationEl) {
+        _super.call(this, _View_QuestionComponent7, renderType_QuestionComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
         this._expr_15 = import1.UNINITIALIZED;
     }
-    _View_QuestionComponent11.prototype.createInternal = function (rootSelector) {
+    _View_QuestionComponent7.prototype.createInternal = function (rootSelector) {
         this._el_0 = import2.createRenderElement(this.renderer, null, 'div', import2.EMPTY_INLINE_ARRAY, null);
         this._text_1 = this.renderer.createText(this._el_0, '\n			', null);
         this._el_2 = import2.createRenderElement(this.renderer, this._el_0, 'i', new import2.InlineArray2(2, 'class', 'left i-good'), null);
@@ -796,7 +570,7 @@ var _View_QuestionComponent11 = (function (_super) {
         ], [], []);
         return null;
     };
-    _View_QuestionComponent11.prototype.detectChangesInternal = function (throwOnChange) {
+    _View_QuestionComponent7.prototype.detectChangesInternal = function (throwOnChange) {
         this.detectContentChildrenChanges(throwOnChange);
         var currVal_15 = import2.interpolate(2, '本题得分 ', this.parent.parent.context.result.score, ' 分，目前总分 ', this.parent.parent.context.result.allScore, ' 分');
         if (import2.checkBinding(throwOnChange, this._expr_15, currVal_15)) {
@@ -805,18 +579,18 @@ var _View_QuestionComponent11 = (function (_super) {
         }
         this.detectViewChildrenChanges(throwOnChange);
     };
-    return _View_QuestionComponent11;
+    return _View_QuestionComponent7;
 }(import3.AppView));
-function viewFactory_QuestionComponent11(viewUtils, parentInjector, declarationEl) {
-    return new _View_QuestionComponent11(viewUtils, parentInjector, declarationEl);
+function viewFactory_QuestionComponent7(viewUtils, parentInjector, declarationEl) {
+    return new _View_QuestionComponent7(viewUtils, parentInjector, declarationEl);
 }
-var _View_QuestionComponent12 = (function (_super) {
-    __extends(_View_QuestionComponent12, _super);
-    function _View_QuestionComponent12(viewUtils, parentInjector, declarationEl) {
-        _super.call(this, _View_QuestionComponent12, renderType_QuestionComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
+var _View_QuestionComponent8 = (function (_super) {
+    __extends(_View_QuestionComponent8, _super);
+    function _View_QuestionComponent8(viewUtils, parentInjector, declarationEl) {
+        _super.call(this, _View_QuestionComponent8, renderType_QuestionComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
         this._expr_15 = import1.UNINITIALIZED;
     }
-    _View_QuestionComponent12.prototype.createInternal = function (rootSelector) {
+    _View_QuestionComponent8.prototype.createInternal = function (rootSelector) {
         this._el_0 = import2.createRenderElement(this.renderer, null, 'div', import2.EMPTY_INLINE_ARRAY, null);
         this._text_1 = this.renderer.createText(this._el_0, '\n			', null);
         this._el_2 = import2.createRenderElement(this.renderer, this._el_0, 'i', new import2.InlineArray2(2, 'class', 'left i-bad'), null);
@@ -851,7 +625,7 @@ var _View_QuestionComponent12 = (function (_super) {
         ], [], []);
         return null;
     };
-    _View_QuestionComponent12.prototype.detectChangesInternal = function (throwOnChange) {
+    _View_QuestionComponent8.prototype.detectChangesInternal = function (throwOnChange) {
         this.detectContentChildrenChanges(throwOnChange);
         var currVal_15 = import2.interpolate(2, '本题得分 ', this.parent.parent.context.result.score, ' 分，目前总分 ', this.parent.parent.context.result.allScore, ' 分');
         if (import2.checkBinding(throwOnChange, this._expr_15, currVal_15)) {
@@ -860,8 +634,8 @@ var _View_QuestionComponent12 = (function (_super) {
         }
         this.detectViewChildrenChanges(throwOnChange);
     };
-    return _View_QuestionComponent12;
+    return _View_QuestionComponent8;
 }(import3.AppView));
-function viewFactory_QuestionComponent12(viewUtils, parentInjector, declarationEl) {
-    return new _View_QuestionComponent12(viewUtils, parentInjector, declarationEl);
+function viewFactory_QuestionComponent8(viewUtils, parentInjector, declarationEl) {
+    return new _View_QuestionComponent8(viewUtils, parentInjector, declarationEl);
 }

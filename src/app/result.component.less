@@ -23,11 +23,13 @@
     animation-timing-function: @arguments;
 }
 
-.rotate {
+.wheel {
     margin-top: 10%;
     height: 165.5px;
-    position: relative;
+    position: absolute;
     width: 165.5px;
+    left: 0;
+    right: 0;
 
     .back {
         .animation-name(flip-delay);
@@ -123,6 +125,8 @@
     overflow-y: auto;
     padding: 10px 20px;
     position: absolute;
+    left: 0;
+    right: 0;
 
     @media(max-height: 500px) {
         max-height: ~"calc(90% - 120px)";

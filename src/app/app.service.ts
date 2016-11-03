@@ -262,7 +262,13 @@ export class AppService {
         return this.post('data/get-projects.cgi', {
             userExamId,
             userId: this.user.userId
-        }).then(data => data.subject as Question[]);
+        }).then(data => {
+            if (data.code == 6000) {
+                alert(data.message);
+                throw new Error(data.message);
+            }
+            return data.subject as Question[];
+        });
     }
 
     result: StepResult;

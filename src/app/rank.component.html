@@ -49,7 +49,7 @@
 	}
 </style>
 <div class="content flex-column" [ngSwitch]="rank">
-	<div class="rotate center">
+	<div class="wheel center">
 		<i class="i-wheel"></i>
 		<div class="circle" [style.backgroundImage]="'url(' + appService.user.headImgUrl + ')'"></div>
 	</div>
@@ -70,7 +70,7 @@
 		<a class="button big center" routerLink="">立即测试</a>
 	</template>
 	<template ngSwitchDefault>
-		<div class="box">
+		<div class="box text-center">
 			<span>我的成绩：{{rank.score}} 分，第 {{rank.rank}} 名</span>
 		</div>
 		<a class="button big center" routerLink="">再测一次</a>
