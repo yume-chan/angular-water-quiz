@@ -63,7 +63,7 @@ export class RankComponent implements AfterViewInit {
     rank: UserRank = null;
 
     ngAfterViewInit(): void {
-        this.pageSize = Math.ceil((this.container.nativeElement as HTMLDivElement).clientHeight / 25) + 1;
+        this.pageSize = Math.ceil((this.container.nativeElement as HTMLDivElement).clientHeight / 22) + 1;
         this.load();
 
         this.appService

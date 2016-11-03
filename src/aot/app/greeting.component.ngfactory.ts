@@ -80,22 +80,25 @@ class _View_GrettingComponent0 extends import1.AppView<import0.GrettingComponent
   _text_7:any;
   _el_8:any;
   _text_9:any;
-  _text_10:any;
-  _el_11:any;
+  _el_10:any;
+  _text_11:any;
   _text_12:any;
-  _text_13:any;
+  _el_13:any;
   _text_14:any;
-  _el_15:any;
+  _text_15:any;
   _text_16:any;
   _text_17:any;
   _el_18:any;
   _text_19:any;
-  /*private*/ _expr_20:any;
-  /*private*/ _expr_21:any;
+  _text_20:any;
+  _el_21:any;
+  _text_22:any;
+  /*private*/ _expr_23:any;
+  /*private*/ _expr_24:any;
   constructor(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import3.AppElement) {
     super(_View_GrettingComponent0,renderType_GrettingComponent,import6.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import7.ChangeDetectorStatus.CheckAlways);
-    this._expr_20 = import7.UNINITIALIZED;
-    this._expr_21 = import7.UNINITIALIZED;
+    this._expr_23 = import7.UNINITIALIZED;
+    this._expr_24 = import7.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import3.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
@@ -107,19 +110,22 @@ class _View_GrettingComponent0 extends import1.AppView<import0.GrettingComponent
     this._el_5 = import4.createRenderElement(this.renderer,this._el_1,'div',new import4.InlineArray2(2,'class','box font-small'),(null as any));
     this._text_6 = this.renderer.createText(this._el_5,'',(null as any));
     this._text_7 = this.renderer.createText(this._el_1,'\n	',(null as any));
-    this._el_8 = import4.createRenderElement(this.renderer,this._el_1,'h1',new import4.InlineArray2(2,'class','text-center'),(null as any));
-    this._text_9 = this.renderer.createText(this._el_8,'浙江省矿联热矿水专委会',(null as any));
-    this._text_10 = this.renderer.createText(this._el_1,'\n	',(null as any));
-    this._el_11 = import4.createRenderElement(this.renderer,this._el_1,'h1',new import4.InlineArray4(4,'class','text-center','style','margin-top: 0'),(null as any));
-    this._text_12 = this.renderer.createText(this._el_11,'矿泉水科学认知测验',(null as any));
-    this._text_13 = this.renderer.createText(this._el_1,'\n	',(null as any));
-    this._text_14 = this.renderer.createText(this._el_1,'\n	',(null as any));
-    this._el_15 = import4.createRenderElement(this.renderer,this._el_1,'div',new import4.InlineArray2(2,'class','box font-small'),(null as any));
-    this._text_16 = this.renderer.createText(this._el_15,'',(null as any));
+    this._el_8 = import4.createRenderElement(this.renderer,this._el_1,'div',import4.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_9 = this.renderer.createText(this._el_8,'\n		',(null as any));
+    this._el_10 = import4.createRenderElement(this.renderer,this._el_8,'h1',new import4.InlineArray2(2,'class','text-center'),(null as any));
+    this._text_11 = this.renderer.createText(this._el_10,'浙江省矿联热矿水专委会',(null as any));
+    this._text_12 = this.renderer.createText(this._el_8,'\n		',(null as any));
+    this._el_13 = import4.createRenderElement(this.renderer,this._el_8,'h1',new import4.InlineArray4(4,'class','text-center','style','margin-top: 10px'),(null as any));
+    this._text_14 = this.renderer.createText(this._el_13,'矿泉水科学认知测验',(null as any));
+    this._text_15 = this.renderer.createText(this._el_8,'\n	',(null as any));
+    this._text_16 = this.renderer.createText(this._el_1,'\n	',(null as any));
     this._text_17 = this.renderer.createText(this._el_1,'\n	',(null as any));
-    this._el_18 = import4.createRenderElement(this.renderer,this._el_1,'i',new import4.InlineArray2(2,'class','i-start center'),(null as any));
-    this._text_19 = this.renderer.createText(this._el_1,'\n',(null as any));
-    var disposable_0:Function = this.renderer.listen(this._el_18,'click',this.eventHandler(this._handle_click_18_0.bind(this)));
+    this._el_18 = import4.createRenderElement(this.renderer,this._el_1,'div',new import4.InlineArray2(2,'class','box font-small'),(null as any));
+    this._text_19 = this.renderer.createText(this._el_18,'',(null as any));
+    this._text_20 = this.renderer.createText(this._el_1,'\n	',(null as any));
+    this._el_21 = import4.createRenderElement(this.renderer,this._el_1,'i',new import4.InlineArray2(2,'class','i-start center'),(null as any));
+    this._text_22 = this.renderer.createText(this._el_1,'\n',(null as any));
+    var disposable_0:Function = this.renderer.listen(this._el_21,'click',this.eventHandler(this._handle_click_21_0.bind(this)));
     this.init(([] as any[]),[
       this._text_0,
       this._el_1,
@@ -131,38 +137,41 @@ class _View_GrettingComponent0 extends import1.AppView<import0.GrettingComponent
       this._text_7,
       this._el_8,
       this._text_9,
-      this._text_10,
-      this._el_11,
+      this._el_10,
+      this._text_11,
       this._text_12,
-      this._text_13,
+      this._el_13,
       this._text_14,
-      this._el_15,
+      this._text_15,
       this._text_16,
       this._text_17,
       this._el_18,
-      this._text_19
+      this._text_19,
+      this._text_20,
+      this._el_21,
+      this._text_22
     ]
     ,[disposable_0],([] as any[]));
     return (null as any);
   }
   detectChangesInternal(throwOnChange:boolean):void {
     this.detectContentChildrenChanges(throwOnChange);
-    const currVal_20:any = import4.interpolate(1,'',this.context.content1,'');
-    if (import4.checkBinding(throwOnChange,this._expr_20,currVal_20)) {
-      this.renderer.setText(this._text_6,currVal_20);
-      this._expr_20 = currVal_20;
+    const currVal_23:any = import4.interpolate(1,'',this.context.content1,'');
+    if (import4.checkBinding(throwOnChange,this._expr_23,currVal_23)) {
+      this.renderer.setText(this._text_6,currVal_23);
+      this._expr_23 = currVal_23;
     }
-    const currVal_21:any = import4.interpolate(1,'',this.context.content2,'');
-    if (import4.checkBinding(throwOnChange,this._expr_21,currVal_21)) {
-      this.renderer.setText(this._text_16,currVal_21);
-      this._expr_21 = currVal_21;
+    const currVal_24:any = import4.interpolate(1,'',this.context.content2,'');
+    if (import4.checkBinding(throwOnChange,this._expr_24,currVal_24)) {
+      this.renderer.setText(this._text_19,currVal_24);
+      this._expr_24 = currVal_24;
     }
     this.detectViewChildrenChanges(throwOnChange);
   }
-  private _handle_click_18_0($event:any):boolean {
+  private _handle_click_21_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_18_0:any = ((<any>this.context.start()) !== false);
-    return (true && pd_18_0);
+    const pd_21_0:any = ((<any>this.context.start()) !== false);
+    return (true && pd_21_0);
   }
 }
 export function viewFactory_GrettingComponent0(viewUtils:import4.ViewUtils,parentInjector:import5.Injector,declarationEl:import3.AppElement):import1.AppView<import0.GrettingComponent> {

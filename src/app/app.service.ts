@@ -154,31 +154,31 @@ export class AppService {
 
     user: User;
     login(code: string): Promise<boolean> {
-        this.user = {
-            userId: 1,
-            city: "123",
-            headImgUrl: "",
-            nickName: "123",
-            province: "",
-            realName: ""
-        }
-        return Promise.resolve(true);
+        // this.user = {
+        //     userId: 4,
+        //     city: "123",
+        //     headImgUrl: "",
+        //     nickName: "123",
+        //     province: "",
+        //     realName: ""
+        // }
+        // return Promise.resolve(true);
 
-        // return this.post('data/login.cgi', {
-        //     code
-        // }).then(data => {
-        //     if (data["code"] == 6000) {
-        //         alert(data["message"]);
-        //         this.goToLogin();
-        //         return false;
-        //     }
+        return this.post('data/login.cgi', {
+            code
+        }).then(data => {
+            if (data["code"] == 6000) {
+                alert(data["message"]);
+                this.goToLogin();
+                return false;
+            }
 
-        //     this.user = data.user as User;
-        //     return true;
-        // }).catch(err => {
-        //     this.goToLogin();
-        //     return false;
-        // });
+            this.user = data.user as User;
+            return true;
+        }).catch(err => {
+            this.goToLogin();
+            return false;
+        });
     }
 
     getVisitCount(): number {

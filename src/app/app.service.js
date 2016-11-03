@@ -83,15 +83,21 @@ export var AppService = (function () {
         location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + this.appId + "&redirect_uri=" + encodeURIComponent(a.href) + "&response_type=code&scope=snsapi_userinfo#wechat_redirect";
     };
     AppService.prototype.login = function (code) {
-        this.user = {
-            userId: 1,
-            city: "123",
-            headImgUrl: "",
-            nickName: "123",
-            province: "",
-            realName: ""
-        };
-        return Promise.resolve(true);
+        var _this = this;
+        return this.post('data/login.cgi', {
+            code: code
+        }).then(function (data) {
+            if (data["code"] == 6000) {
+                alert(data["message"]);
+                _this.goToLogin();
+                return false;
+            }
+            _this.user = data.user;
+            return true;
+        }).catch(function (err) {
+            _this.goToLogin();
+            return false;
+        });
     };
     AppService.prototype.getVisitCount = function () {
         return 1546121;

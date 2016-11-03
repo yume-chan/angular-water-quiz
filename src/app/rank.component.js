@@ -32,7 +32,7 @@ export var RankComponent = (function () {
     };
     RankComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
-        this.pageSize = Math.ceil(this.container.nativeElement.clientHeight / 25) + 1;
+        this.pageSize = Math.ceil(this.container.nativeElement.clientHeight / 22) + 1;
         this.load();
         this.appService
             .getUserRank()

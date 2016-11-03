@@ -40,7 +40,7 @@ a {
     background-size: 185 * @factor 124 * @factor;
     display: block;
     height: 100%;
-    overflow: hidden;
+    overflow-y: auto;
     position: absolute;
     width: 100%;
 }
@@ -48,10 +48,9 @@ a {
 .content {
     color: white;
     display: block;
-    height: 100%;
     margin: 0 auto;
+    max-height: 100%;
     max-width: 375px;
-    overflow: auto;
     position: relative;
 }
 
