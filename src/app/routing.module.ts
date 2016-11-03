@@ -26,7 +26,7 @@ import { ViewGuard } from './view-guard.module';
             { path: 'city', component: CityComponent, canActivate: [LoginGuard] },
             { path: 'city/:province', component: CityComponent, canActivate: [LoginGuard] },
             { path: 'rank', component: RankComponent, canActivate: [LoginGuard] },
-            { path: 'question', component: ViewComponent, canActivate: [LoginGuard, ViewGuard] },
+            { path: 'question', component: ViewComponent, canActivate: [ViewGuard] },
             { path: 'submit', component: SubmitComponent, canActivate: [LoginGuard] },
             { path: '**', component: NotFoundComponent, canActivate: [NotFoundGuard] }
         ], {

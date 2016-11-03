@@ -149,7 +149,7 @@ export class AppService {
 
     goToLogin() {
         let a = document.createElement("a");
-        a.href = "wx.html?redirect_uri=" + encodeURIComponent(location.hash.split("?")[0]);
+        a.href = "wx.html?redirect_uri=" + encodeURIComponent(location.hash);
         location.href = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${this.appId}&redirect_uri=${encodeURIComponent(a.href)}&response_type=code&scope=snsapi_userinfo#wechat_redirect`;
     }
 

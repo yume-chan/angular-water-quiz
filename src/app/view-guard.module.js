@@ -14,7 +14,7 @@ export var ViewGuard = (function () {
             case "answer":
                 return true;
             default:
-                this.router.navigate([""]);
+                this.router.navigate(["/"], { preserveQueryParams: true });
                 return false;
         }
     };

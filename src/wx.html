@@ -17,6 +17,7 @@
         url += "?code=" + getParameterByName("code");
     else
         url += "&code=" + getParameterByName("code");
-    a.href = "index.html" + url + "?code=" + getParameterByName("code");
+
+    a.href = "index.html" + url;
     location.href = a.href;
 </script>

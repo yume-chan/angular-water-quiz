@@ -138,11 +138,7 @@ class AppRoutingModuleInjector extends import0.NgModuleInjector<import1.AppRouti
         {
           path: 'question',
           component: import26.ViewComponent,
-          canActivate: [
-            import9.LoginGuard,
-            import10.ViewGuard
-          ]
-
+          canActivate: [import10.ViewGuard]
         }
         ,
         {

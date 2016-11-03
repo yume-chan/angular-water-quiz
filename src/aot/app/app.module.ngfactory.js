@@ -453,10 +453,7 @@ var AppModuleInjector = (function (_super) {
                         {
                             path: 'question',
                             component: import55.ViewComponent,
-                            canActivate: [
-                                import31.LoginGuard,
-                                import32.ViewGuard
-                            ]
+                            canActivate: [import32.ViewGuard]
                         },
                         {
                             path: 'submit',

@@ -324,11 +324,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
         {
           path: 'question',
           component: import55.ViewComponent,
-          canActivate: [
-            import31.LoginGuard,
-            import32.ViewGuard
-          ]
-
+          canActivate: [import32.ViewGuard]
         }
         ,
         {
