@@ -169,7 +169,7 @@ var _View_CityComponent1 = (function (_super) {
     };
     _View_CityComponent1.prototype._handle_click_0_0 = function ($event) {
         this.markPathToRootAsCheckOnce();
-        var pd_0_0 = (this.parent.context.next(this.context.$implicit) !== false);
+        var pd_0_0 = (this.parent.context.next(this.context.$implicit.id, this.context.$implicit.name) !== false);
         return (true && pd_0_0);
     };
     return _View_CityComponent1;

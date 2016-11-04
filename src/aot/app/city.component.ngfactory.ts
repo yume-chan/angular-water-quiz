@@ -178,7 +178,7 @@ class _View_CityComponent1 extends import1.AppView<any> {
   }
   private _handle_click_0_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    const pd_0_0:any = ((<any>this.parent.context.next(this.context.$implicit)) !== false);
+    const pd_0_0:any = ((<any>this.parent.context.next(this.context.$implicit.id,this.context.$implicit.name)) !== false);
     return (true && pd_0_0);
   }
 }

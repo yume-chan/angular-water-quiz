@@ -27,7 +27,7 @@
 			<img [attr.src]="appService.user.headImgUrl">
 			<i class="i-input center"></i>
 			<div><span>姓名：</span><input class="input" name="username" type="text" (change)="change($event)" [value]="realName" [placeholder]="appService.user.nickName"></div>
-			<div><span>城市：</span><span class="input" [class.gray]="!appService.user.city && !appService.user.noCity" routerLink="/city">{{appService.user.city || appService.user.noCity ? appService.user.province + appService.user.city : '必填'}}</span></div>
+			<div><span>城市：</span><span class="input" [class.gray]="!appService.user.city" routerLink="/city">{{appService.user.city ? appService.user.province + appService.user.city : '必填'}}</span></div>
 			<a class="button big blue center" [class.disabled]="!appService.user.city" (click)="submit()">确认提交</a>
 			<div class="font-small">注：本测试由浙江省矿业联合会全程监管可进入省矿业联合会官网进行查看</div>
 		</form>

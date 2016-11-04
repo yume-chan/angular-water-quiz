@@ -7,21 +7,13 @@ export var CityComponent = (function () {
         this.route = route;
         this.appService = appService;
     }
-    CityComponent.prototype.next = function (item) {
+    CityComponent.prototype.next = function (id, name) {
         if (this.province) {
-            this.appService.user.province = item.name;
-            if (!item.children) {
-                this.appService.user.city = "";
-                this.appService.user.noCity = true;
-                history.go(-1);
-            }
-            else {
-                this.appService.user.city = null;
-                this.router.navigate(["city", item.id]);
-            }
+            this.appService.user.province = name;
+            this.router.navigate(["city", id]);
         }
         else {
-            this.appService.user.city = item.name;
+            this.appService.user.city = name;
             history.go(-2);
         }
     };

@@ -85,7 +85,6 @@ export interface User {
     province: string;
     city: string;
     headImgUrl: string;
-    noCity: boolean;
 }
 
 @Injectable()

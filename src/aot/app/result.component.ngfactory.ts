@@ -711,13 +711,13 @@ class _View_ResultComponent7 extends import3.AppView<any> {
       this.renderer.setElementProperty(this._el_14,'placeholder',currVal_32);
       this._expr_32 = currVal_32;
     }
-    const currVal_33:boolean = (!this.parent.context.appService.user.city && !this.parent.context.appService.user.noCity);
+    const currVal_33:boolean = !this.parent.context.appService.user.city;
     if (import2.checkBinding(throwOnChange,this._expr_33,currVal_33)) {
       this.renderer.setElementClass(this._el_19,'gray',currVal_33);
       this._expr_33 = currVal_33;
     }
     this._RouterLink_19_3.detectChangesInHostProps(this,this._el_19,throwOnChange);
-    const currVal_34:any = import2.interpolate(1,'',((this.parent.context.appService.user.city || this.parent.context.appService.user.noCity)? (this.parent.context.appService.user.province + this.parent.context.appService.user.city): '必填'),'');
+    const currVal_34:any = import2.interpolate(1,'',(this.parent.context.appService.user.city? (this.parent.context.appService.user.province + this.parent.context.appService.user.city): '必填'),'');
     if (import2.checkBinding(throwOnChange,this._expr_34,currVal_34)) {
       this.renderer.setText(this._text_20,currVal_34);
       this._expr_34 = currVal_34;
