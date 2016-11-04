@@ -15,6 +15,7 @@ export var AppService = (function () {
         this.router = router;
         this.onLoadingSource = new Subject();
         this.onLoading = this.onLoadingSource.asObservable();
+        this.first = true;
         this.onNextSource = new Subject();
         this.onNext = this.onNextSource.asObservable();
         this.onEndSource = new Subject();
@@ -94,15 +95,20 @@ export var AppService = (function () {
     };
     AppService.prototype.login = function (code, userId) {
         var _this = this;
+        if (this.code == code)
+            return Promise.resolve(false);
+        this.code = code;
         return this.post('data/login.cgi', {
             code: code,
             userId: userId
         }).then(function (data) {
             if (data["code"] == 6000) {
-                alert(data["message"]);
+                if (!_this.first)
+                    alert(data["message"]);
                 _this.goToLogin();
                 return false;
             }
+            _this.first = false;
             _this.user = data.user;
             _this.getWxSignature()
                 .then(function (config) {

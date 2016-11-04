@@ -163,6 +163,8 @@ export class AppService {
         }, false).catch(err => { });
     }
 
+    first: boolean = true;
+    code: string;
     user: User;
     login(code: string, userId: number | null): Promise<boolean> {
         // this.user = {
@@ -175,16 +177,22 @@ export class AppService {
         // }
         // return Promise.resolve(true);
 
+        if (this.code == code)
+            return Promise.resolve(false);
+
+        this.code = code;
         return this.post('data/login.cgi', {
             code,
             userId
         }).then(data => {
             if (data["code"] == 6000) {
-                alert(data["message"]);
+                if (!this.first)
+                    alert(data["message"]);
                 this.goToLogin();
                 return false;
             }
 
+            this.first = false;
             this.user = data.user as User;
 
             this.getWxSignature()
