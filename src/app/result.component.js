@@ -25,7 +25,8 @@ export var ResultComponent = (function () {
     };
     ResultComponent.prototype.submit = function () {
         var _this = this;
-        if (!this.appService.user.city)
+        if (!this.appService.user.city &&
+            !this.appService.user.noCity)
             return;
         this.result.submit = true;
         this.appService

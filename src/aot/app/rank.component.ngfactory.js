@@ -316,7 +316,7 @@ var _View_RankComponent2 = (function (_super) {
     }
     _View_RankComponent2.prototype.createInternal = function (rootSelector) {
         this._text_0 = this.renderer.createText(null, '\n		', null);
-        this._el_1 = import4.createRenderElement(this.renderer, null, 'div', new import4.InlineArray2(2, 'class', 'box'), null);
+        this._el_1 = import4.createRenderElement(this.renderer, null, 'div', new import4.InlineArray2(2, 'class', 'box text-center'), null);
         this._text_2 = this.renderer.createText(this._el_1, '\n			', null);
         this._el_3 = import4.createRenderElement(this.renderer, this._el_1, 'span', import4.EMPTY_INLINE_ARRAY, null);
         this._text_4 = this.renderer.createText(this._el_3, '我的成绩：还没有测试过', null);

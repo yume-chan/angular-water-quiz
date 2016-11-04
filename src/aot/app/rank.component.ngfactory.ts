@@ -364,7 +364,7 @@ class _View_RankComponent2 extends import1.AppView<any> {
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._text_0 = this.renderer.createText((null as any),'\n		',(null as any));
-    this._el_1 = import4.createRenderElement(this.renderer,(null as any),'div',new import4.InlineArray2(2,'class','box'),(null as any));
+    this._el_1 = import4.createRenderElement(this.renderer,(null as any),'div',new import4.InlineArray2(2,'class','box text-center'),(null as any));
     this._text_2 = this.renderer.createText(this._el_1,'\n			',(null as any));
     this._el_3 = import4.createRenderElement(this.renderer,this._el_1,'span',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._text_4 = this.renderer.createText(this._el_3,'我的成绩：还没有测试过',(null as any));

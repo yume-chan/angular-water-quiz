@@ -61,7 +61,8 @@ export class ResultComponent implements OnInit {
     }
 
     submit(): void {
-        if (!this.appService.user.city)
+        if (!this.appService.user.city &&
+            !this.appService.user.noCity)
             return;
 
         this.result.submit = true;

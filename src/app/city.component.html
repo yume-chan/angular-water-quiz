@@ -20,7 +20,7 @@
 </style>
 <div class="content">
 	<div class="item text-center">请选择</div>
-	<div class="item" *ngFor="let item of list" (click)="next(item.id, item.name)">
+	<div class="item" *ngFor="let item of list" (click)="next(item)">
 		<div class="inner">{{item.name}}</div>
 	</div>
 </div>

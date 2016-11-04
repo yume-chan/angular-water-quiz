@@ -40,12 +40,20 @@ export class CityComponent implements OnInit {
 
     province: boolean;
 
-    next(id: number, name: string) {
+    next(item: Province) {
         if (this.province) {
-            this.appService.user.province = name;
-            this.router.navigate(["city", id]);
+            this.appService.user.province = item.name;
+
+            if (!item.children) {
+                this.appService.user.city = "";
+                this.appService.user.noCity = true;
+                history.go(-1);
+            } else {
+                this.appService.user.city = null;
+                this.router.navigate(["city", item.id]);
+            }
         } else {
-            this.appService.user.city = name;
+            this.appService.user.city = item.name;
             history.go(-2);
         }
     }
