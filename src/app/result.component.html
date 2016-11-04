@@ -10,7 +10,7 @@
 	<div class="white">
 		<i class="i-see-answer center" *ngIf="!advanceMode || submitCount <= 3" [routerLink]="['/answer', result.userExamId]"></i>
 		<h2 class="orange text-center" *ngIf="advanceMode && submitCount > 3">查看测评答案</h2>
-		<div>{{result.comment}}</div>
+		<div class="wrap">{{result.comment}}</div>
 		<template [ngIf]="!advanceMode || submitCount <= 3">
 			<a class="button big blue solid center" *ngIf="!result.submit" (click)="show()">提交结果 获得官方认知勋章</a>
 			<a class="button big blue solid center" *ngIf="result.submit">结果已提交</a>
