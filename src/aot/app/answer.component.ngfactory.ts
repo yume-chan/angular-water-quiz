@@ -180,7 +180,7 @@ class _View_AnswerComponent1 extends import1.AppView<any> {
     this._el_1 = import4.createRenderElement(this.renderer,(null as any),'h2',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._text_2 = this.renderer.createText(this._el_1,'',(null as any));
     this._text_3 = this.renderer.createText((null as any),'\n		',(null as any));
-    this._el_4 = import4.createRenderElement(this.renderer,(null as any),'h3',new import4.InlineArray2(2,'class','center'),(null as any));
+    this._el_4 = import4.createRenderElement(this.renderer,(null as any),'h3',import4.EMPTY_INLINE_ARRAY,(null as any));
     this._text_5 = this.renderer.createText(this._el_4,'',(null as any));
     this._text_6 = this.renderer.createText((null as any),'\n		',(null as any));
     this._el_7 = import4.createRenderElement(this.renderer,(null as any),'i',new import4.InlineArray2(2,'class','i-answer center'),(null as any));
@@ -263,7 +263,7 @@ class _View_AnswerComponent2 extends import1.AppView<any> {
     this._text_1 = this.renderer.createText(this._el_0,'\n	',(null as any));
     this._el_2 = import4.createRenderElement(this.renderer,this._el_0,'div',new import4.InlineArray2(2,'class','popup'),(null as any));
     this._text_3 = this.renderer.createText(this._el_2,'\n		',(null as any));
-    this._el_4 = import4.createRenderElement(this.renderer,this._el_2,'h2',new import4.InlineArray2(2,'class','orange center'),(null as any));
+    this._el_4 = import4.createRenderElement(this.renderer,this._el_2,'h2',new import4.InlineArray2(2,'class','orange'),(null as any));
     this._text_5 = this.renderer.createText(this._el_4,'',(null as any));
     this._text_6 = this.renderer.createText(this._el_2,'\n		',(null as any));
     this._el_7 = import4.createRenderElement(this.renderer,this._el_2,'h3',import4.EMPTY_INLINE_ARRAY,(null as any));

@@ -4,4 +4,4 @@
  */
  /* tslint:disable */
 
-export const styles:any[] = ['.popup[_ngcontent-%COMP%]{background-color:#fff;border-radius:10px;color:#1688CB;left:0;margin-left:auto;margin-right:auto;max-width:375px;padding:0 20px 20px;position:fixed;right:0;top:50%;transform:translate(0,-50%);width:90%}'];
+export const styles:any[] = ['.popup[_ngcontent-%COMP%]{background-color:#fff;border-radius:10px;color:#1688CB;left:0;margin-left:auto;margin-right:auto;max-width:375px;padding:0 20px 20px;position:fixed;right:0;top:50%;transform:translate(0,-50%);width:90%}.checkbox[_ngcontent-%COMP%], .radio[_ngcontent-%COMP%], h2[_ngcontent-%COMP%]{white-space:pre-wrap}'];

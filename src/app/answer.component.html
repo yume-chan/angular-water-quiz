@@ -5,13 +5,13 @@
 	<i class="i-drop small center"></i>
 	<template ngFor let-question [ngForOf]="questions">
 		<h2>问题{{question.order}} ({{question.type == 1 ? "选择题" : "判断题"}})</h2>
-		<h3 class="center">{{question.content}}</h3>
+		<h3>{{question.content}}</h3>
 		<i class="i-answer center" [class.disabled]="disabled" (click)="showAnswer(question)"></i>
 	</template>
 </div>
 <div class="mask" *ngIf="current">
 	<div class="popup">
-		<h2 class="orange center">此题的答案应该选择{{current.isCorrect}}</h2>
+		<h2 class="orange">此题的答案应该选择{{current.isCorrect}}</h2>
 		<h3>{{current.correctDetail}}</h3>
 		<i class="i-know center" (click)="current = null"></i>
 	</div>
