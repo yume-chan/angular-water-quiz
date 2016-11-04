@@ -93,7 +93,7 @@ export class AppService {
     constructor(private http: Http) { }
 
     get appId(): string {
-        return "wxe1331332af6001e2";
+        return "wx4d4af0fa9db19479";
     }
 
     private onLoadingSource: Subject<boolean> = new Subject<boolean>();

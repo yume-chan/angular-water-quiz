@@ -21,7 +21,7 @@ export var AppService = (function () {
     }
     Object.defineProperty(AppService.prototype, "appId", {
         get: function () {
-            return "wxe1331332af6001e2";
+            return "wx4d4af0fa9db19479";
         },
         enumerable: true,
         configurable: true
