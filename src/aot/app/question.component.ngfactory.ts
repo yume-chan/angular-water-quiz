@@ -168,7 +168,7 @@ class _View_QuestionComponent0 extends import3.AppView<import0.QuestionComponent
     this._text_18 = this.renderer.createText(this._el_12,'\n		',(null as any));
     this._text_19 = this.renderer.createText(this._el_12,'\n	',(null as any));
     this._text_20 = this.renderer.createText(this._el_2,'\n	',(null as any));
-    this._el_21 = import2.createRenderElement(this.renderer,this._el_2,'div',new import2.InlineArray2(2,'style','height: 30px'),(null as any));
+    this._el_21 = import2.createRenderElement(this.renderer,this._el_2,'div',new import2.InlineArray2(2,'style','padding-bottom: 20px'),(null as any));
     this._text_22 = this.renderer.createText(this._el_21,'\n		',(null as any));
     this._anchor_23 = this.renderer.createTemplateAnchor(this._el_21,(null as any));
     this._appEl_23 = new import5.AppElement(23,21,this,this._anchor_23);
