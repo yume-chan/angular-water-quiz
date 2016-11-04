@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { Router } from '@angular/router';
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/timeout';
@@ -9,8 +10,9 @@ export var QuestionType;
     QuestionType[QuestionType["judge"] = 2] = "judge";
 })(QuestionType || (QuestionType = {}));
 export var AppService = (function () {
-    function AppService(http) {
+    function AppService(http, router) {
         this.http = http;
+        this.router = router;
         this.onLoadingSource = new Subject();
         this.onLoading = this.onLoadingSource.asObservable();
         this.onNextSource = new Subject();
@@ -79,7 +81,8 @@ export var AppService = (function () {
     };
     AppService.prototype.goToLogin = function () {
         var a = document.createElement("a");
-        a.href = "wx.html?redirect_uri=" + encodeURIComponent(location.hash);
+        var url = this.router.url;
+        a.href = "wx.html?redirect_uri=" + encodeURIComponent(url);
         location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + this.appId + "&redirect_uri=" + encodeURIComponent(a.href) + "&response_type=code&scope=snsapi_userinfo#wechat_redirect";
     };
     AppService.prototype.shareLog = function (contentId, type) {
@@ -233,6 +236,7 @@ export var AppService = (function () {
     ];
     AppService.ctorParameters = [
         { type: Http, },
+        { type: Router, },
     ];
     return AppService;
 }());

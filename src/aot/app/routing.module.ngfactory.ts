@@ -101,7 +101,7 @@ class AppRoutingModuleInjector extends import0.NgModuleInjector<import1.AppRouti
   get _ROUTES_9():any[] {
       if ((this.__ROUTES_9 == (null as any))) { (this.__ROUTES_9 = [[
         {
-          path: '',
+          path: 'greeting',
           component: import22.GrettingComponent,
           canActivate: [import9.LoginGuard]
         }

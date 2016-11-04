@@ -149,7 +149,7 @@ class _View_QuestionComponent0 extends import3.AppView<import0.QuestionComponent
     this._el_6 = import2.createRenderElement(this.renderer,this._el_2,'h2',import2.EMPTY_INLINE_ARRAY,(null as any));
     this._text_7 = this.renderer.createText(this._el_6,'',(null as any));
     this._text_8 = this.renderer.createText(this._el_2,'\n	',(null as any));
-    this._el_9 = import2.createRenderElement(this.renderer,this._el_2,'h3',new import2.InlineArray2(2,'class','text-center'),(null as any));
+    this._el_9 = import2.createRenderElement(this.renderer,this._el_2,'h2',new import2.InlineArray2(2,'class','text-center'),(null as any));
     this._text_10 = this.renderer.createText(this._el_9,'',(null as any));
     this._text_11 = this.renderer.createText(this._el_2,'\n	',(null as any));
     this._el_12 = import2.createRenderElement(this.renderer,this._el_2,'div',new import2.InlineArray2(2,'class','selections'),(null as any));

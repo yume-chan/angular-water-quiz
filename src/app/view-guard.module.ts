@@ -24,7 +24,7 @@ export class ViewGuard implements CanActivate {
             case "answer":
                 return true;
             default:
-                this.router.navigate(["/"], { preserveQueryParams: true });
+                this.router.navigate(["greeting"], { queryParams: route.queryParams });
                 return false;
         }
     }

@@ -287,7 +287,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
   get _ROUTES_44():any[] {
       if ((this.__ROUTES_44 == (null as any))) { (this.__ROUTES_44 = [[
         {
-          path: '',
+          path: 'greeting',
           component: import51.GrettingComponent,
           canActivate: [import31.LoginGuard]
         }
@@ -364,7 +364,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__NotFoundGuard_52;
   }
   get _AppService_53():import30.AppService {
-    if ((this.__AppService_53 == (null as any))) { (this.__AppService_53 = new import30.AppService(this._Http_37)); }
+    if ((this.__AppService_53 == (null as any))) { (this.__AppService_53 = new import30.AppService(this._Http_37,this._Router_45)); }
     return this.__AppService_53;
   }
   get _LoginGuard_54():import31.LoginGuard {

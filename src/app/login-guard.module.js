@@ -10,6 +10,7 @@ export var LoginGuard = (function () {
         if (!this.appService.user) {
             var code = route.queryParams["code"];
             if (code) {
+                alert(location.href);
                 return this.appService.login(code, route.queryParams["userId"]);
             }
             else {

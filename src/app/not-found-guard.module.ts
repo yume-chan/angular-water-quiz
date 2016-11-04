@@ -14,7 +14,7 @@ export class NotFoundGuard implements CanActivate {
     }
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-        this.router.navigate([""]);
+        this.router.navigate(["greeting"], { queryParams: route.queryParams });
         return false;
     }
 }

@@ -4,7 +4,7 @@
 <div class="content flex-column">
 	<i class="i-drop small center"></i>
 	<h2>问题{{question.order}} ({{question.type == 1 ? "选择题" : "判断题"}})</h2>
-	<h3 class="text-center">{{question.content}}</h3>
+	<h2 class="text-center">{{question.content}}</h2>
 	<div class="selections" [ngSwitch]="question.subjectOptionList.length">
 		<template [ngSwitchCase]="2">
 			<template ngFor let-item [ngForOf]="question.subjectOptionList" let-i="index">

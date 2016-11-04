@@ -17,7 +17,7 @@ export var AppRoutingModule = (function () {
         { type: NgModule, args: [{
                     imports: [
                         RouterModule.forRoot([
-                            { path: '', component: GrettingComponent, canActivate: [LoginGuard] },
+                            { path: 'greeting', component: GrettingComponent, canActivate: [LoginGuard] },
                             { path: 'answer/:id', component: AnswerComponent, canActivate: [LoginGuard] },
                             { path: 'answer', redirectTo: '' },
                             { path: 'city', component: CityComponent, canActivate: [LoginGuard] },

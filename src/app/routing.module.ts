@@ -20,7 +20,7 @@ import { ViewGuard } from './view-guard.module';
 @NgModule({
     imports: [
         RouterModule.forRoot([
-            { path: '', component: GrettingComponent, canActivate: [LoginGuard] },
+            { path: 'greeting', component: GrettingComponent, canActivate: [LoginGuard] },
             { path: 'answer/:id', component: AnswerComponent, canActivate: [LoginGuard] },
             { path: 'answer', redirectTo: '' },
             { path: 'city', component: CityComponent, canActivate: [LoginGuard] },

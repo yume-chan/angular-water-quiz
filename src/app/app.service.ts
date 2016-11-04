@@ -2,6 +2,7 @@
 
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
+import { Router } from '@angular/router';
 
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/toPromise';
@@ -89,7 +90,7 @@ export interface User {
 
 @Injectable()
 export class AppService {
-    constructor(private http: Http) { }
+    constructor(private http: Http, private router: Router) { }
 
     get appId(): string {
         return "wxe1331332af6001e2";
@@ -149,7 +150,8 @@ export class AppService {
 
     goToLogin() {
         let a = document.createElement("a");
-        a.href = "wx.html?redirect_uri=" + encodeURIComponent(location.hash);
+        let url = this.router.url;
+        a.href = "wx.html?redirect_uri=" + encodeURIComponent(url);
         location.href = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${this.appId}&redirect_uri=${encodeURIComponent(a.href)}&response_type=code&scope=snsapi_userinfo#wechat_redirect`;
     }
 

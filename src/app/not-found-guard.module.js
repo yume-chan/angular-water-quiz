@@ -5,7 +5,7 @@ export var NotFoundGuard = (function () {
         this.router = router;
     }
     NotFoundGuard.prototype.canActivate = function (route, state) {
-        this.router.navigate([""]);
+        this.router.navigate(["greeting"], { queryParams: route.queryParams });
         return false;
     };
     NotFoundGuard.decorators = [

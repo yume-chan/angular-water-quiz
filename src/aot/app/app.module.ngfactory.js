@@ -422,7 +422,7 @@ var AppModuleInjector = (function (_super) {
             if ((this.__ROUTES_44 == null)) {
                 (this.__ROUTES_44 = [[
                         {
-                            path: '',
+                            path: 'greeting',
                             component: import51.GrettingComponent,
                             canActivate: [import31.LoginGuard]
                         },
@@ -526,7 +526,7 @@ var AppModuleInjector = (function (_super) {
     Object.defineProperty(AppModuleInjector.prototype, "_AppService_53", {
         get: function () {
             if ((this.__AppService_53 == null)) {
-                (this.__AppService_53 = new import30.AppService(this._Http_37));
+                (this.__AppService_53 = new import30.AppService(this._Http_37, this._Router_45));
             }
             return this.__AppService_53;
         },
