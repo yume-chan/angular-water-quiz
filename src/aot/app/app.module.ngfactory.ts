@@ -364,7 +364,7 @@ class AppModuleInjector extends import0.NgModuleInjector<import1.AppModule> {
     return this.__NotFoundGuard_52;
   }
   get _AppService_53():import30.AppService {
-    if ((this.__AppService_53 == (null as any))) { (this.__AppService_53 = new import30.AppService(this._Http_37,this._Router_45)); }
+    if ((this.__AppService_53 == (null as any))) { (this.__AppService_53 = new import30.AppService(this._Http_37)); }
     return this.__AppService_53;
   }
   get _LoginGuard_54():import31.LoginGuard {

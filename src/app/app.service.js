@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import { Router } from '@angular/router';
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/timeout';
@@ -10,9 +9,8 @@ export var QuestionType;
     QuestionType[QuestionType["judge"] = 2] = "judge";
 })(QuestionType || (QuestionType = {}));
 export var AppService = (function () {
-    function AppService(http, router) {
+    function AppService(http) {
         this.http = http;
-        this.router = router;
         this.onLoadingSource = new Subject();
         this.onLoading = this.onLoadingSource.asObservable();
         this.first = true;
@@ -82,8 +80,7 @@ export var AppService = (function () {
     };
     AppService.prototype.goToLogin = function () {
         var a = document.createElement("a");
-        var url = this.router.url;
-        a.href = "wx.html?redirect_uri=" + encodeURIComponent(url);
+        a.href = "wx.html?redirect_uri=" + encodeURIComponent(location.hash);
         location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + this.appId + "&redirect_uri=" + encodeURIComponent(a.href) + "&response_type=code&scope=snsapi_userinfo#wechat_redirect";
     };
     AppService.prototype.shareLog = function (contentId, type) {
@@ -95,8 +92,6 @@ export var AppService = (function () {
     };
     AppService.prototype.login = function (code, userId) {
         var _this = this;
-        if (this.code == code)
-            return Promise.resolve(false);
         this.code = code;
         return this.post('data/login.cgi', {
             code: code,
@@ -242,7 +237,6 @@ export var AppService = (function () {
     ];
     AppService.ctorParameters = [
         { type: Http, },
-        { type: Router, },
     ];
     return AppService;
 }());

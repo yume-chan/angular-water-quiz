@@ -20,6 +20,8 @@ export class LoginGuard implements CanActivate {
         if (!this.appService.user) {
             let code = route.queryParams["code"];
             if (code) {
+                if (code == this.appService.code)
+                    return true;
                 return this.appService.login(code, route.queryParams["userId"]);
             } else {
                 this.appService.goToLogin();

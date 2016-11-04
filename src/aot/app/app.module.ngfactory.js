@@ -526,7 +526,7 @@ var AppModuleInjector = (function (_super) {
     Object.defineProperty(AppModuleInjector.prototype, "_AppService_53", {
         get: function () {
             if ((this.__AppService_53 == null)) {
-                (this.__AppService_53 = new import30.AppService(this._Http_37, this._Router_45));
+                (this.__AppService_53 = new import30.AppService(this._Http_37));
             }
             return this.__AppService_53;
         },
