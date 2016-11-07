@@ -94,8 +94,8 @@ var _View_SubmitComponent0 = (function (_super) {
     __extends(_View_SubmitComponent0, _super);
     function _View_SubmitComponent0(viewUtils, parentInjector, declarationEl) {
         _super.call(this, _View_SubmitComponent0, renderType_SubmitComponent, import7.ViewType.COMPONENT, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
-        this._expr_38 = import1.UNINITIALIZED;
-        this._expr_39 = import1.UNINITIALIZED;
+        this._expr_36 = import1.UNINITIALIZED;
+        this._expr_37 = import1.UNINITIALIZED;
     }
     _View_SubmitComponent0.prototype.createInternal = function (rootSelector) {
         var parentRenderNode = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
@@ -121,24 +121,22 @@ var _View_SubmitComponent0 = (function (_super) {
         this._el_19 = import2.createRenderElement(this.renderer, this._el_12, 'div', import2.EMPTY_INLINE_ARRAY, null);
         this._text_20 = this.renderer.createText(this._el_19, '\n			感谢参与，您的结果已经保存至浙江省矿业联合会官网中的上善若水计划板块中，您可以点击以下按钮链接进入矿联官网上善若水板块，进行查看您的成绩；', null);
         this._el_21 = import2.createRenderElement(this.renderer, this._el_19, 'br', import2.EMPTY_INLINE_ARRAY, null);
-        this._text_22 = this.renderer.createText(this._el_19, ' 水是生命质量好坏的最基础的营养元素，好水“铸造”好体质，好的体内水环境有助与其他营养素的吸收、利用的效率，保持人体健康动态平衡。\n			', null);
+        this._text_22 = this.renderer.createText(this._el_19, ' \n			水是生命质量好坏的最基础的营养元素，好水“铸造”好体质，好的体内水环境有助与其他营养素的吸收、利用的效率，保持人体健康动态平衡。', null);
         this._el_23 = import2.createRenderElement(this.renderer, this._el_19, 'br', import2.EMPTY_INLINE_ARRAY, null);
-        this._text_24 = this.renderer.createText(this._el_19, ' 可能以自来水和净水器为主的这类解决您安全饮用的日常生活饮用水，已经不能满足拥有您这样健康饮水认知的人士群体，上善若水计划或许正好能满足您这样的健康饮水需求，为您提供亲民实惠的价格以及协助您养成科学健康的饮水习惯的互联网管家式服务；\n			', null);
+        this._text_24 = this.renderer.createText(this._el_19, ' \n			可能以自来水和净水器为主的这类解决您安全饮用的日常生活饮用水，已经不能满足拥有您这样健康饮水认知的人士群体，上善若水计划或许正好能满足您这样的健康饮水需求，为您提供亲民实惠的价格以及协助您养成科学健康的饮水习惯的互联网管家式服务；', null);
         this._el_25 = import2.createRenderElement(this.renderer, this._el_19, 'br', import2.EMPTY_INLINE_ARRAY, null);
-        this._text_26 = this.renderer.createText(this._el_19, ' 有兴趣不妨点击“了解一下 上善若水计划”。', null);
-        this._el_27 = import2.createRenderElement(this.renderer, this._el_19, 'br', import2.EMPTY_INLINE_ARRAY, null);
-        this._text_28 = this.renderer.createText(this._el_19, '\n		', null);
-        this._text_29 = this.renderer.createText(this._el_12, '\n		', null);
-        this._el_30 = import2.createRenderElement(this.renderer, this._el_12, 'a', new import2.InlineArray4(4, 'class', 'button big blue center', 'routerLink', '/rank'), null);
-        this._RouterLinkWithHref_30_3 = new import13.Wrapper_RouterLinkWithHref(this.parentInjector.get(import14.Router), this.parentInjector.get(import15.ActivatedRoute), this.parentInjector.get(import16.LocationStrategy));
-        this._text_31 = this.renderer.createText(this._el_30, '进入官网 查看排名', null);
-        this._text_32 = this.renderer.createText(this._el_12, '\n		', null);
-        this._el_33 = import2.createRenderElement(this.renderer, this._el_12, 'a', new import2.InlineArray2(2, 'class', 'button big blue center'), null);
-        this._text_34 = this.renderer.createText(this._el_33, '了解一下 上善若水计划', null);
-        this._text_35 = this.renderer.createText(this._el_12, '\n	', null);
-        this._text_36 = this.renderer.createText(this._el_3, '\n', null);
-        var disposable_0 = this.renderer.listen(this._el_30, 'click', this.eventHandler(this._handle_click_30_0.bind(this)));
-        var disposable_1 = this.renderer.listen(this._el_33, 'click', this.eventHandler(this._handle_click_33_0.bind(this)));
+        this._text_26 = this.renderer.createText(this._el_19, ' \n			有兴趣不妨点击“了解一下 上善若水计划”。\n		', null);
+        this._text_27 = this.renderer.createText(this._el_12, '\n		', null);
+        this._el_28 = import2.createRenderElement(this.renderer, this._el_12, 'a', new import2.InlineArray4(4, 'class', 'button big blue center', 'routerLink', '/rank'), null);
+        this._RouterLinkWithHref_28_3 = new import13.Wrapper_RouterLinkWithHref(this.parentInjector.get(import14.Router), this.parentInjector.get(import15.ActivatedRoute), this.parentInjector.get(import16.LocationStrategy));
+        this._text_29 = this.renderer.createText(this._el_28, '进入官网 查看排名', null);
+        this._text_30 = this.renderer.createText(this._el_12, '\n		', null);
+        this._el_31 = import2.createRenderElement(this.renderer, this._el_12, 'a', new import2.InlineArray2(2, 'class', 'button big blue center'), null);
+        this._text_32 = this.renderer.createText(this._el_31, '了解一下 上善若水计划', null);
+        this._text_33 = this.renderer.createText(this._el_12, '\n	', null);
+        this._text_34 = this.renderer.createText(this._el_3, '\n', null);
+        var disposable_0 = this.renderer.listen(this._el_28, 'click', this.eventHandler(this._handle_click_28_0.bind(this)));
+        var disposable_1 = this.renderer.listen(this._el_31, 'click', this.eventHandler(this._handle_click_31_0.bind(this)));
         this.init([], [
             this._text_0,
             this._text_1,
@@ -167,16 +165,14 @@ var _View_SubmitComponent0 = (function (_super) {
             this._text_24,
             this._el_25,
             this._text_26,
-            this._el_27,
-            this._text_28,
+            this._text_27,
+            this._el_28,
             this._text_29,
-            this._el_30,
-            this._text_31,
+            this._text_30,
+            this._el_31,
             this._text_32,
-            this._el_33,
-            this._text_34,
-            this._text_35,
-            this._text_36
+            this._text_33,
+            this._text_34
         ], [
             disposable_0,
             disposable_1
@@ -184,41 +180,41 @@ var _View_SubmitComponent0 = (function (_super) {
         return null;
     };
     _View_SubmitComponent0.prototype.injectorGetInternal = function (token, requestNodeIndex, notFoundResult) {
-        if (((token === import17.RouterLinkWithHref) && ((30 <= requestNodeIndex) && (requestNodeIndex <= 31)))) {
-            return this._RouterLinkWithHref_30_3.context;
+        if (((token === import17.RouterLinkWithHref) && ((28 <= requestNodeIndex) && (requestNodeIndex <= 29)))) {
+            return this._RouterLinkWithHref_28_3.context;
         }
         return notFoundResult;
     };
     _View_SubmitComponent0.prototype.detectChangesInternal = function (throwOnChange) {
-        var currVal_30_0_0 = '/rank';
-        this._RouterLinkWithHref_30_3.check_routerLink(currVal_30_0_0, throwOnChange, false);
-        this._RouterLinkWithHref_30_3.detectChangesInInputProps(this, this._el_30, throwOnChange);
+        var currVal_28_0_0 = '/rank';
+        this._RouterLinkWithHref_28_3.check_routerLink(currVal_28_0_0, throwOnChange, false);
+        this._RouterLinkWithHref_28_3.detectChangesInInputProps(this, this._el_28, throwOnChange);
         this.detectContentChildrenChanges(throwOnChange);
-        var currVal_38 = (('url(' + this.context.appService.user.headImgUrl) + ')');
-        if (import2.checkBinding(throwOnChange, this._expr_38, currVal_38)) {
-            this.renderer.setElementStyle(this._el_9, 'backgroundImage', ((this.viewUtils.sanitizer.sanitize(import18.SecurityContext.STYLE, currVal_38) == null) ? null : this.viewUtils.sanitizer.sanitize(import18.SecurityContext.STYLE, currVal_38).toString()));
-            this._expr_38 = currVal_38;
+        var currVal_36 = (('url(' + this.context.appService.user.headImgUrl) + ')');
+        if (import2.checkBinding(throwOnChange, this._expr_36, currVal_36)) {
+            this.renderer.setElementStyle(this._el_9, 'backgroundImage', ((this.viewUtils.sanitizer.sanitize(import18.SecurityContext.STYLE, currVal_36) == null) ? null : this.viewUtils.sanitizer.sanitize(import18.SecurityContext.STYLE, currVal_36).toString()));
+            this._expr_36 = currVal_36;
         }
-        var currVal_39 = import2.interpolate(1, '', (this.context.appService.user.realName || this.context.appService.user.nickName), '');
-        if (import2.checkBinding(throwOnChange, this._expr_39, currVal_39)) {
-            this.renderer.setText(this._text_17, currVal_39);
-            this._expr_39 = currVal_39;
+        var currVal_37 = import2.interpolate(1, '亲爱的 ', (this.context.appService.user.realName || this.context.appService.user.nickName), '');
+        if (import2.checkBinding(throwOnChange, this._expr_37, currVal_37)) {
+            this.renderer.setText(this._text_17, currVal_37);
+            this._expr_37 = currVal_37;
         }
-        this._RouterLinkWithHref_30_3.detectChangesInHostProps(this, this._el_30, throwOnChange);
+        this._RouterLinkWithHref_28_3.detectChangesInHostProps(this, this._el_28, throwOnChange);
         this.detectViewChildrenChanges(throwOnChange);
     };
     _View_SubmitComponent0.prototype.destroyInternal = function () {
-        this._RouterLinkWithHref_30_3.context.ngOnDestroy();
+        this._RouterLinkWithHref_28_3.context.ngOnDestroy();
     };
-    _View_SubmitComponent0.prototype._handle_click_30_0 = function ($event) {
+    _View_SubmitComponent0.prototype._handle_click_28_0 = function ($event) {
         this.markPathToRootAsCheckOnce();
-        var pd_30_0 = (this._RouterLinkWithHref_30_3.context.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
-        return (true && pd_30_0);
+        var pd_28_0 = (this._RouterLinkWithHref_28_3.context.onClick($event.button, $event.ctrlKey, $event.metaKey) !== false);
+        return (true && pd_28_0);
     };
-    _View_SubmitComponent0.prototype._handle_click_33_0 = function ($event) {
+    _View_SubmitComponent0.prototype._handle_click_31_0 = function ($event) {
         this.markPathToRootAsCheckOnce();
-        var pd_33_0 = (this.context.appService.goExternal() !== false);
-        return (true && pd_33_0);
+        var pd_31_0 = (this.context.appService.goExternal() !== false);
+        return (true && pd_31_0);
     };
     return _View_SubmitComponent0;
 }(import3.AppView));

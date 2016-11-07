@@ -364,7 +364,7 @@ var _View_ResultComponent2 = (function (_super) {
         _super.call(this, _View_ResultComponent2, renderType_ResultComponent, import7.ViewType.EMBEDDED, viewUtils, parentInjector, declarationEl, import1.ChangeDetectorStatus.CheckAlways);
     }
     _View_ResultComponent2.prototype.createInternal = function (rootSelector) {
-        this._el_0 = import2.createRenderElement(this.renderer, null, 'h2', new import2.InlineArray2(2, 'class', 'orange text-center'), null);
+        this._el_0 = import2.createRenderElement(this.renderer, null, 'i', new import2.InlineArray2(2, 'class', 'i-see-answer center'), null);
         this._text_1 = this.renderer.createText(this._el_0, '查看测评答案', null);
         this.init([].concat([this._el_0]), [
             this._el_0,

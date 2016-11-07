@@ -42,16 +42,16 @@
 			<i class="left i-good"></i>
 			<div class="text">
 				<i class="i-t-good"></i>
-				<div>此道题您答对啦~~~</div>
-				<div>本题得分 {{result.score}} 分，目前总分 {{result.allScore}} 分</div>
+				<div>恭喜您~~~</div>
+				<div>答对啦，本题您获得{{result.score}}分，至此您总得分为{{result.allScore}}分。加油、加油！！</div>
 			</div>
 		</div>
 		<div *ngSwitchDefault>
 			<i class="left i-bad"></i>
 			<div class="text">
 				<i class="i-t-bad"></i>
-				<div>此道题您答错了~~~</div>
-				<div>本题得分 {{result.score}} 分，目前总分 {{result.allScore}} 分</div>
+				<div>很遗憾~~~</div>
+				<div>答错了，本题您获得{{result.score}}分，至此您总得分为{{result.allScore}}分，继续加油哦！！</div>
 			</div>
 		</div>
 		<!--<a class="button blue middle center" (click)="next()">下一题 ({{count}}s)</a>-->

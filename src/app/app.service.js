@@ -136,9 +136,6 @@ export var AppService = (function () {
             return false;
         });
     };
-    AppService.prototype.getVisitCount = function () {
-        return 1546121;
-    };
     AppService.prototype.getRank = function (currentPage, pageSize) {
         return this.post('data/get-rank.cgi', {
             currentPage: currentPage,

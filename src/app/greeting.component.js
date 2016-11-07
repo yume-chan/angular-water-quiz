@@ -20,9 +20,6 @@ export var GrettingComponent = (function () {
     GrettingComponent.prototype.ngOnInit = function () {
         this.appService.reset();
         this.appService.last = "greeting";
-        this.visitCount = this.appService.getVisitCount();
-        this.content1 = "简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介";
-        this.content2 = "规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则";
     };
     GrettingComponent.decorators = [
         { type: Component, args: [{

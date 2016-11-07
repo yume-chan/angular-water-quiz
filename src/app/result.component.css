@@ -90,6 +90,10 @@
 .white .wrap {
   white-space: pre-wrap;
 }
+.mask,
+.share-mask {
+  -webkit-transform: translateZ(50px);
+}
 form {
   background-color: white;
   border-radius: 10px;

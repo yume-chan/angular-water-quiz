@@ -545,7 +545,7 @@ var _View_QuestionComponent7 = (function (_super) {
         this._el_6 = import2.createRenderElement(this.renderer, this._el_4, 'i', new import2.InlineArray2(2, 'class', 'i-t-good'), null);
         this._text_7 = this.renderer.createText(this._el_4, '\n				', null);
         this._el_8 = import2.createRenderElement(this.renderer, this._el_4, 'div', import2.EMPTY_INLINE_ARRAY, null);
-        this._text_9 = this.renderer.createText(this._el_8, '此道题您答对啦~~~', null);
+        this._text_9 = this.renderer.createText(this._el_8, '恭喜您~~~', null);
         this._text_10 = this.renderer.createText(this._el_4, '\n				', null);
         this._el_11 = import2.createRenderElement(this.renderer, this._el_4, 'div', import2.EMPTY_INLINE_ARRAY, null);
         this._text_12 = this.renderer.createText(this._el_11, '', null);
@@ -572,7 +572,7 @@ var _View_QuestionComponent7 = (function (_super) {
     };
     _View_QuestionComponent7.prototype.detectChangesInternal = function (throwOnChange) {
         this.detectContentChildrenChanges(throwOnChange);
-        var currVal_15 = import2.interpolate(2, '本题得分 ', this.parent.parent.context.result.score, ' 分，目前总分 ', this.parent.parent.context.result.allScore, ' 分');
+        var currVal_15 = import2.interpolate(2, '答对啦，本题您获得', this.parent.parent.context.result.score, '分，至此您总得分为', this.parent.parent.context.result.allScore, '分。加油、加油！！');
         if (import2.checkBinding(throwOnChange, this._expr_15, currVal_15)) {
             this.renderer.setText(this._text_12, currVal_15);
             this._expr_15 = currVal_15;
@@ -600,7 +600,7 @@ var _View_QuestionComponent8 = (function (_super) {
         this._el_6 = import2.createRenderElement(this.renderer, this._el_4, 'i', new import2.InlineArray2(2, 'class', 'i-t-bad'), null);
         this._text_7 = this.renderer.createText(this._el_4, '\n				', null);
         this._el_8 = import2.createRenderElement(this.renderer, this._el_4, 'div', import2.EMPTY_INLINE_ARRAY, null);
-        this._text_9 = this.renderer.createText(this._el_8, '此道题您答错了~~~', null);
+        this._text_9 = this.renderer.createText(this._el_8, '很遗憾~~~', null);
         this._text_10 = this.renderer.createText(this._el_4, '\n				', null);
         this._el_11 = import2.createRenderElement(this.renderer, this._el_4, 'div', import2.EMPTY_INLINE_ARRAY, null);
         this._text_12 = this.renderer.createText(this._el_11, '', null);
@@ -627,7 +627,7 @@ var _View_QuestionComponent8 = (function (_super) {
     };
     _View_QuestionComponent8.prototype.detectChangesInternal = function (throwOnChange) {
         this.detectContentChildrenChanges(throwOnChange);
-        var currVal_15 = import2.interpolate(2, '本题得分 ', this.parent.parent.context.result.score, ' 分，目前总分 ', this.parent.parent.context.result.allScore, ' 分');
+        var currVal_15 = import2.interpolate(2, '答错了，本题您获得', this.parent.parent.context.result.score, '分，至此您总得分为', this.parent.parent.context.result.allScore, '分，继续加油哦！！');
         if (import2.checkBinding(throwOnChange, this._expr_15, currVal_15)) {
             this.renderer.setText(this._text_12, currVal_15);
             this._expr_15 = currVal_15;

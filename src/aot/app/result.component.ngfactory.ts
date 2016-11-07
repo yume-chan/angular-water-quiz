@@ -399,7 +399,7 @@ class _View_ResultComponent2 extends import3.AppView<any> {
     super(_View_ResultComponent2,renderType_ResultComponent,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import1.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import5.AppElement {
-    this._el_0 = import2.createRenderElement(this.renderer,(null as any),'h2',new import2.InlineArray2(2,'class','orange text-center'),(null as any));
+    this._el_0 = import2.createRenderElement(this.renderer,(null as any),'i',new import2.InlineArray2(2,'class','i-see-answer center'),(null as any));
     this._text_1 = this.renderer.createText(this._el_0,'查看测评答案',(null as any));
     this.init(([] as any[]).concat([this._el_0]),[
       this._el_0,

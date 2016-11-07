@@ -142,6 +142,12 @@
     }
 }
 
+.mask, 
+.share-mask {
+    // Fix flash on iOS 7.x
+    -webkit-transform: translateZ(50px);
+}
+
 form {
     background-color: white;
     border-radius: 10px;

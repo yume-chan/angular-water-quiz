@@ -225,9 +225,9 @@ export class AppService {
         });
     }
 
-    getVisitCount(): number {
-        return 1546121;
-    }
+    // getVisitCount(): number {
+    //     return 1546121;
+    // }
 
     getRank(currentPage: number, pageSize: number): Promise<RankItem[]> {
         return this.post('data/get-rank.cgi', {

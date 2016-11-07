@@ -448,14 +448,6 @@
   background-position: left top;
   height: auto;
 }
-.mask {
-  background-color: rgba(22, 136, 203, 0.6);
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 .share-mask {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkYAAACXAQMAAADK7gaMAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAABIRJREFUaN7t2k3q1DAUAPAXI8aFNi5HqK3iBVyOWK3gwku4mCNUXNiF2IiglxBP4iKi6Eb0AoIRBTeiARcWrY3vtSkq0/oBWYRiYOrYaX59eUmTtvzhf/lD2QWTbHwSa0NJPJgkulCSDCf1oaQ8mFS6UFITTHJORSjpQBIPJ2lYsRRj4cEkodYsyXBSuIzDmku2aulCMKmIUNpAfOVkMKmK74Z15ZKBFRce4XIXoyTV/4Xzb0oa4YIQTroRTKojlM5AdIVF+CQVThI6volOqPie7tY9Pd2IUKojvF8NVtiqXzvIGCUIVRKIr0T40MKCSdzEJ7EI34qmEb6dWffKcia+JzIZTMqDSWWEAzPFz2rvxaVe8wL8JNxyEGrQiL+UttP7ruyfum5mX0GS3ssr/33XsSFOtTexDvvFL4BQU6zwbvGdpN/40tLG+spD3TMwIeyxT/iy5OtOX3Y1bnKnISVtC9bHdPQFneAPUuU/zGnUCsyGcwYKASjJDuvfI/yp/rNkvcQHCfutdF+0l0qSepIeGUyTmpOc/lmqKXbcxazEWu0QziAVCKN06Lw2+2nKFbc/Scz4oSRPo2SEGqk6xy9nD9fY6A54Wc01rjGyGyXek/SuHaUMEa65HupCleMB55TF/1HD27czkjN5N4aTk8RdN0qFpH5iLdZF2543JOGmp2OuOOB7aXIWhR9SM0ln8AQCf0YFO+BDbTFFtzTGSnHnbqbnrM2yUUroYOd8npjrqVYD8BHb1FU1/qhQKvCnF2U/I+3MkXTqNgpJeSlHKfXtB94ZFL4q4yVnFuZwL73uocHBiwmx1NYUNr5PQHzTGaZHYcfUNyhcs3jLQaEwbNmxZFhaW8zHJvV/HpNbEF+1VPlnjrE0PR74/JpakBqnaeMQGCSMKU1Rcv3QJyDdrae6/OxQcoh3clEqncHEUGDFtEin5b2fpM/NG3vhOn6DzygZeX1ROkWSv1CmjL/EMCnEq5gU25gWw9kBa/HHi1m5ONMyDdIYkpyaJIxJpuNKy7oCd/aAUk/nunlhSUr5dN05p0fpxANUskFSOAqA6kMF/AVJfbYsqVFiXqKMT5J0hrfDzD5ImAP+oViScofSDpvHX92epBzzVJDknBXmEloXUBJ3URLPb84gHLhCieY3Y0Hc58pLzkul+2qFcig1qgLJDUrJnCSU0D9JmZgyPkgFSQoEkPRJGUhIOpCIOclIDUdgkPDAZJAaC3mH8dQoiSHKDhP9EKVU2HHympFsTnvTUUrpbNzhQD5HLbMoAUn1rhovz61saS3kMxJWw7PR/fA1Z2CT5CAcSVuSTD1KzFZeqvKCJPZsX2J0RTy6IxU0KGGXK5RMCvU2BTZJwlSWxpiG3Y1sGA/v567eDtjDp+JniXbb7Qa4rrykmtbfUlg8J2xmH6Jyi9I7HEYNM35kUTHbLRoUiZgk/Ic27W8ex7h+hFP0GZKSaZ9GSTCSLiuK/MfB/dI9vc+phuFzEKZyvIVEmgmpfhw9ND5ZkubuoFo4IgZp7vXOwX98ZcJ1qAcm9g+vmL4D08cImxHd3VcAAAAASUVORK5CYII=");
   background-position: center center;
@@ -487,7 +479,7 @@ h1 {
   font-size: 24px;
 }
 h2 {
-  font-size: 20px;
+  font-size: 18px;
 }
 h3 {
   font-size: 16px;
@@ -603,4 +595,12 @@ a {
 }
 .orange {
   color: #E88E42;
+}
+.mask {
+  background-color: rgba(22, 136, 203, 0.6);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }

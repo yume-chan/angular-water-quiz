@@ -44,17 +44,12 @@ export class GrettingComponent implements OnInit {
             .catch(err => this.enabled = true);
     }
 
-    content1: string;
-    content2: string;
-
-    visitCount: number;
+    // visitCount: number;
 
     ngOnInit(): void {
         this.appService.reset();
         this.appService.last = "greeting";
 
-        this.visitCount = this.appService.getVisitCount();
-        this.content1 = "简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介";
-        this.content2 = "规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则规则";
+        // this.visitCount = this.appService.getVisitCount();
     }
 }
