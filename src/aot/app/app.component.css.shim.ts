@@ -4,4 +4,4 @@
  */
  /* tslint:disable */
 
-export const styles:any[] = ['[_nghost-%COMP%]{display:block;height:100%;overflow:hidden;position:relative;width:100%}.loading[_ngcontent-%COMP%]{background-color:rgba(22,136,203,.6);height:100%;left:0;position:fixed;top:0;transform:none;width:100%}.rotate[_ngcontent-%COMP%]{left:50%;position:absolute;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%)}'];
+export const styles:any[] = ['[_nghost-%COMP%] {\n  display: block;\n  height: 100%;\n  overflow: hidden;\n  position: relative;\n  width: 100%;\n}\n.loading[_ngcontent-%COMP%] {\n  background-color: rgba(22, 136, 203, 0.6);\n  height: 100%;\n  left: 0;\n  position: fixed;\n  top: 0;\n  transform: none;\n  width: 100%;\n}\n.rotate[_ngcontent-%COMP%] {\n  left: 50%;\n  position: absolute;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  -webkit-transform: translate(-50%, -50%);\n}'];

@@ -4,4 +4,4 @@
  */
  /* tslint:disable */
 
-export const styles:any[] = ['.popup[_ngcontent-%COMP%]{background-color:#fff;border-radius:10px;color:#1688CB;left:0;margin-left:auto;margin-right:auto;max-width:375px;padding:0 20px 20px;position:fixed;right:0;top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);width:90%}h2[_ngcontent-%COMP%], h3[_ngcontent-%COMP%]{white-space:pre-wrap}'];
+export const styles:any[] = ['.popup[_ngcontent-%COMP%] {\n  background-color: white;\n  border-radius: 10px;\n  color: #1688CB;\n  left: 0;\n  margin-left: auto;\n  margin-right: auto;\n  max-width: 375px;\n  padding: 0 20px 20px;\n  position: fixed;\n  right: 0;\n  top: 50%;\n  transform: translateY(-50%);\n  -webkit-transform: translateY(-50%);\n  width: 90%;\n}\nh2[_ngcontent-%COMP%], h3[_ngcontent-%COMP%] {\n  white-space: pre-wrap;\n}'];

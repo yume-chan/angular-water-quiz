@@ -1,1 +1,23 @@
-:host{display:block;height:100%;overflow:hidden;position:relative;width:100%}.loading{background-color:rgba(22,136,203,.6);height:100%;left:0;position:fixed;top:0;transform:none;width:100%}.rotate{left:50%;position:absolute;top:50%;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%)}
+:host {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.loading {
+  background-color: rgba(22, 136, 203, 0.6);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transform: none;
+  width: 100%;
+}
+.rotate {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}

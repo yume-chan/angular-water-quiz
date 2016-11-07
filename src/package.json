@@ -9,7 +9,8 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "build:aot": "ngc -p tsconfig-aot.json && rollup -c rollup-config.js",
-    "lite:aot": "lite-server -c aot/bs-config.json"
+    "lite:aot": "lite-server -c aot/bs-config.json",
+    "lessc": "lessc"
   },
   "author": "Chen Ximin",
   "dependencies": {
@@ -37,6 +38,7 @@
     "@types/node": "6.0.45",
     "concurrently": "3.0.0",
     "less": "2.7.1",
+    "less-plugin-clean-css": "^1.5.1",
     "lite-server": "2.2.2",
     "plugin-typescript": "5.2.7",
     "rollup": "0.36.3",
