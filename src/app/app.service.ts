@@ -193,7 +193,7 @@ export class AppService {
 
             this.getWxSignature()
                 .then(config => {
-                    // config.debug = true;
+                    config.debug = true;
                     config.jsApiList = ["onMenuShareTimeline", "onMenuShareAppMessage"];
                     wx.config(config);
                     wx.ready(() => {
@@ -340,6 +340,6 @@ export class AppService {
     }
 
     getWxSignature(): Promise<wx.WxConfig> {
-        return this.post('data/get-wx-signature.cgi', { url: location.href }, false);
+        return this.post('data/get-wx-signature.cgi', { url: location.href.replace(location.hash, "") }, false);
     }
 }

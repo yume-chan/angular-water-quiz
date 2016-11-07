@@ -107,6 +107,7 @@ export var AppService = (function () {
             _this.user = data.user;
             _this.getWxSignature()
                 .then(function (config) {
+                config.debug = true;
                 config.jsApiList = ["onMenuShareTimeline", "onMenuShareAppMessage"];
                 wx.config(config);
                 wx.ready(function () {
@@ -227,7 +228,7 @@ export var AppService = (function () {
         return this.post('data/get-content.cgi', { type: type, userId: this.user.userId }, false);
     };
     AppService.prototype.getWxSignature = function () {
-        return this.post('data/get-wx-signature.cgi', { url: location.href }, false);
+        return this.post('data/get-wx-signature.cgi', { url: location.href.replace(location.hash, "") }, false);
     };
     AppService.decorators = [
         { type: Injectable },
