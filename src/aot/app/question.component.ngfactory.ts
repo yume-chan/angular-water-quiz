@@ -590,14 +590,11 @@ class _View_QuestionComponent7 extends import3.AppView<any> {
   _el_8:any;
   _text_9:any;
   _text_10:any;
-  _el_11:any;
-  _text_12:any;
-  _text_13:any;
-  _text_14:any;
-  /*private*/ _expr_15:any;
+  _text_11:any;
+  /*private*/ _expr_12:any;
   constructor(viewUtils:import2.ViewUtils,parentInjector:import6.Injector,declarationEl:import5.AppElement) {
     super(_View_QuestionComponent7,renderType_QuestionComponent,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import1.ChangeDetectorStatus.CheckAlways);
-    this._expr_15 = import1.UNINITIALIZED;
+    this._expr_12 = import1.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import5.AppElement {
     this._el_0 = import2.createRenderElement(this.renderer,(null as any),'div',import2.EMPTY_INLINE_ARRAY,(null as any));
@@ -609,12 +606,9 @@ class _View_QuestionComponent7 extends import3.AppView<any> {
     this._el_6 = import2.createRenderElement(this.renderer,this._el_4,'i',new import2.InlineArray2(2,'class','i-t-good'),(null as any));
     this._text_7 = this.renderer.createText(this._el_4,'\n				',(null as any));
     this._el_8 = import2.createRenderElement(this.renderer,this._el_4,'div',import2.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_9 = this.renderer.createText(this._el_8,'恭喜您~~~',(null as any));
-    this._text_10 = this.renderer.createText(this._el_4,'\n				',(null as any));
-    this._el_11 = import2.createRenderElement(this.renderer,this._el_4,'div',import2.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_12 = this.renderer.createText(this._el_11,'',(null as any));
-    this._text_13 = this.renderer.createText(this._el_4,'\n			',(null as any));
-    this._text_14 = this.renderer.createText(this._el_0,'\n		',(null as any));
+    this._text_9 = this.renderer.createText(this._el_8,'',(null as any));
+    this._text_10 = this.renderer.createText(this._el_4,'\n			',(null as any));
+    this._text_11 = this.renderer.createText(this._el_0,'\n		',(null as any));
     this.init(([] as any[]).concat([this._el_0]),[
       this._el_0,
       this._text_1,
@@ -627,20 +621,17 @@ class _View_QuestionComponent7 extends import3.AppView<any> {
       this._el_8,
       this._text_9,
       this._text_10,
-      this._el_11,
-      this._text_12,
-      this._text_13,
-      this._text_14
+      this._text_11
     ]
     ,([] as any[]),([] as any[]));
     return (null as any);
   }
   detectChangesInternal(throwOnChange:boolean):void {
     this.detectContentChildrenChanges(throwOnChange);
-    const currVal_15:any = import2.interpolate(2,'答对啦，本题您获得',this.parent.parent.context.result.score,'分，至此您总得分为',this.parent.parent.context.result.allScore,'分。加油、加油！！');
-    if (import2.checkBinding(throwOnChange,this._expr_15,currVal_15)) {
-      this.renderer.setText(this._text_12,currVal_15);
-      this._expr_15 = currVal_15;
+    const currVal_12:any = import2.interpolate(2,'答对啦，本题您获得',this.parent.parent.context.result.score,'分，至此您总得分为',this.parent.parent.context.result.allScore,'分。加油、加油！！');
+    if (import2.checkBinding(throwOnChange,this._expr_12,currVal_12)) {
+      this.renderer.setText(this._text_9,currVal_12);
+      this._expr_12 = currVal_12;
     }
     this.detectViewChildrenChanges(throwOnChange);
   }
@@ -660,14 +651,11 @@ class _View_QuestionComponent8 extends import3.AppView<any> {
   _el_8:any;
   _text_9:any;
   _text_10:any;
-  _el_11:any;
-  _text_12:any;
-  _text_13:any;
-  _text_14:any;
-  /*private*/ _expr_15:any;
+  _text_11:any;
+  /*private*/ _expr_12:any;
   constructor(viewUtils:import2.ViewUtils,parentInjector:import6.Injector,declarationEl:import5.AppElement) {
     super(_View_QuestionComponent8,renderType_QuestionComponent,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import1.ChangeDetectorStatus.CheckAlways);
-    this._expr_15 = import1.UNINITIALIZED;
+    this._expr_12 = import1.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import5.AppElement {
     this._el_0 = import2.createRenderElement(this.renderer,(null as any),'div',import2.EMPTY_INLINE_ARRAY,(null as any));
@@ -679,12 +667,9 @@ class _View_QuestionComponent8 extends import3.AppView<any> {
     this._el_6 = import2.createRenderElement(this.renderer,this._el_4,'i',new import2.InlineArray2(2,'class','i-t-bad'),(null as any));
     this._text_7 = this.renderer.createText(this._el_4,'\n				',(null as any));
     this._el_8 = import2.createRenderElement(this.renderer,this._el_4,'div',import2.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_9 = this.renderer.createText(this._el_8,'很遗憾~~~',(null as any));
-    this._text_10 = this.renderer.createText(this._el_4,'\n				',(null as any));
-    this._el_11 = import2.createRenderElement(this.renderer,this._el_4,'div',import2.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_12 = this.renderer.createText(this._el_11,'',(null as any));
-    this._text_13 = this.renderer.createText(this._el_4,'\n			',(null as any));
-    this._text_14 = this.renderer.createText(this._el_0,'\n		',(null as any));
+    this._text_9 = this.renderer.createText(this._el_8,'',(null as any));
+    this._text_10 = this.renderer.createText(this._el_4,'\n			',(null as any));
+    this._text_11 = this.renderer.createText(this._el_0,'\n		',(null as any));
     this.init(([] as any[]).concat([this._el_0]),[
       this._el_0,
       this._text_1,
@@ -697,20 +682,17 @@ class _View_QuestionComponent8 extends import3.AppView<any> {
       this._el_8,
       this._text_9,
       this._text_10,
-      this._el_11,
-      this._text_12,
-      this._text_13,
-      this._text_14
+      this._text_11
     ]
     ,([] as any[]),([] as any[]));
     return (null as any);
   }
   detectChangesInternal(throwOnChange:boolean):void {
     this.detectContentChildrenChanges(throwOnChange);
-    const currVal_15:any = import2.interpolate(2,'答错了，本题您获得',this.parent.parent.context.result.score,'分，至此您总得分为',this.parent.parent.context.result.allScore,'分，继续加油哦！！');
-    if (import2.checkBinding(throwOnChange,this._expr_15,currVal_15)) {
-      this.renderer.setText(this._text_12,currVal_15);
-      this._expr_15 = currVal_15;
+    const currVal_12:any = import2.interpolate(2,'答错了，本题您获得',this.parent.parent.context.result.score,'分，至此您总得分为',this.parent.parent.context.result.allScore,'分，继续加油哦！！');
+    if (import2.checkBinding(throwOnChange,this._expr_12,currVal_12)) {
+      this.renderer.setText(this._text_9,currVal_12);
+      this._expr_12 = currVal_12;
     }
     this.detectViewChildrenChanges(throwOnChange);
   }
