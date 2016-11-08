@@ -107,7 +107,6 @@ export var AppService = (function () {
             _this.user = data.user;
             _this.getWxSignature()
                 .then(function (config) {
-                config.debug = true;
                 config.jsApiList = ["onMenuShareTimeline", "onMenuShareAppMessage"];
                 wx.config(config);
                 wx.ready(function () {

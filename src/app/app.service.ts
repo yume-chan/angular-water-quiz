@@ -193,7 +193,7 @@ export class AppService {
 
             this.getWxSignature()
                 .then(config => {
-                    config.debug = true;
+                    // config.debug = true;
                     config.jsApiList = ["onMenuShareTimeline", "onMenuShareAppMessage"];
                     wx.config(config);
                     wx.ready(() => {
